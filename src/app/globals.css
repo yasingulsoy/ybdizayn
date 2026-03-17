@@ -680,10 +680,22 @@ body {
   height: 120px;
   overflow: hidden;
   opacity: 0.6;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: opacity 0.2s, border-color 0.2s;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+
+.project-page-exact__thumb:hover {
+  opacity: 0.9;
 }
 
 .project-page-exact__thumb.is-active {
   opacity: 1;
+  border-color: #a47c58;
 }
 
 .project-page-exact__more {
