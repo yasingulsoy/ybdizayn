@@ -1,28 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
+import { getAllArticles } from "@/lib/articles";
+import articleImage from "@/lib/tropical-authentic-dining-room-interior-design-with-gallery-wall.webp";
+import articleImageAlt from "@/lib/2026Trendi-Duvar-Kağıdı-Modelleri-6.webp";
 
-const posts = [
-  {
-    title: "Duvar Kağıdınızı Kendiniz Yapın",
-    date: "20 Ağu, 2023",
-    image: "/wp/blog-1.jpg",
-    href: "https://ybdizayn.com/duvar-kagidinizi-kendiniz-yapin/",
-  },
-  {
-    title: "Duvar Kağıdını Kullanmanın Doğru Yolunu Öğrenin",
-    date: "19 Tem, 2023",
-    image: "/wp/blog-2.jpg",
-    href: "https://ybdizayn.com/learn-the-right-way-to-use-wall-sheet/",
-  },
-  {
-    title: "Duvar Kağıdını Temizlemenin Pratik Yolları",
-    date: "20 Nis, 2023",
-    image: "/wp/blog-3.jpg",
-    href: "https://ybdizayn.com/capitalize-on-low-hanging-fruit/",
-  },
-];
+const articleImages = [articleImage, articleImageAlt];
 
 export default function BlogSection() {
+  const posts = getAllArticles().slice(0, 3);
+
   return (
     <section className="py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
@@ -37,22 +23,22 @@ export default function BlogSection() {
         </div>
 
         <div className="grid gap-8 md:grid-cols-3">
-          {posts.map((post, i) => (
+          {posts.map((post, index) => (
             <article
-              key={i}
+              key={post.slug}
               className="group bg-white rounded-2xl overflow-hidden border border-[#3c3531]/10 hover:shadow-xl hover:border-[#a47c58]/30 transition-all duration-300"
             >
-              <Link href={post.href} className="block">
+              <Link href={`/${post.slug}`} className="block">
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <Image
-                    src={post.image}
+                    src={articleImages[index % articleImages.length]}
                     alt={post.title}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                     sizes="(max-width: 768px) 100vw, 33vw"
                   />
                   <span className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-medium text-[#3c3531]">
-                    {post.date}
+                    {post.publishDate}
                   </span>
                   <span className="absolute inset-0 flex items-center justify-center bg-[#3c3531]/0 group-hover:bg-[#3c3531]/20 transition-colors">
                     <span className="w-12 h-12 rounded-full bg-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
@@ -63,7 +49,7 @@ export default function BlogSection() {
                   </span>
                 </div>
                 <div className="p-6">
-                  <p className="text-sm text-[#3c3531]/60 mb-2">admin</p>
+                  <p className="text-sm text-[#3c3531]/60 mb-2">YB Dizayn</p>
                   <h3 className="text-lg font-semibold text-[#3c3531] group-hover:text-[#a47c58] transition-colors line-clamp-2">
                     {post.title}
                   </h3>
