@@ -41,8 +41,8 @@ export default function Footer() {
             <ul className="footer-exact__contact">
               <li>
                 <span>Telefon:</span>{" "}
-                <a href="tel:+902166516163">
-                  +90 216 651 6163
+                <a href="tel:+905302407161">
+                  +90 530 240 71 61
                 </a>
               </li>
               <li>

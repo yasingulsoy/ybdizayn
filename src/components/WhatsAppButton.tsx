@@ -1,7 +1,7 @@
 "use client";
 
 export default function WhatsAppButton() {
-  const phoneNumber = "902166516163";
+  const phoneNumber = "905302407161";
   const message = "Merhaba, YB Dizayn hakkında bilgi almak istiyorum.";
 
   return (

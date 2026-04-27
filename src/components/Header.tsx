@@ -27,12 +27,12 @@ export default function Header() {
         >
           <div className="flex flex-nowrap items-center gap-3 md:gap-6">
             <a
-              href="tel:+902166516163"
+              href="tel:+905302407161"
               className="flex items-center gap-1.5 hover:text-[#a47c58] transition-all duration-300 md:gap-2"
             >
               <PhoneIcon />
               <span className="hidden sm:inline">Hemen Ara</span>
-              <span className="text-xs md:text-sm">+90 216 651 6163</span>
+              <span className="text-xs md:text-sm">+90 530 240 71 61</span>
             </a>
             <span className="flex items-center gap-1.5 md:gap-2">
               <LocationIcon />
@@ -60,7 +60,7 @@ export default function Header() {
               <InstagramIcon />
             </a>
             <a
-              href="https://wa.me/905332825702"
+              href="https://wa.me/905302407161"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[#a47c58] transition-all duration-300 p-1"

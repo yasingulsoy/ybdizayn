@@ -8,7 +8,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
   title: "İletişim - YB Dizayn",
-  description: "YB Dizayn iletişim bilgileri. Telefon: +90 216 651 6163, E-posta: info@ybdizayn.com, Adres: Ümraniye/İstanbul",
+  description: "YB Dizayn iletişim bilgileri. Telefon: +90 530 240 71 61, E-posta: info@ybdizayn.com, Adres: Ümraniye/İstanbul",
 };
 
 export default function IletisimPage() {
@@ -42,8 +42,7 @@ export default function IletisimPage() {
               <div className="contact-exact__right">
                 <div className="contact-exact__details">
                   <ul>
-                    <li><span>Telefon</span><p><a href="tel:+902166516163">+90 216 651 6163</a></p></li>
-                    <li><span>Cep Telefon</span><p><a href="tel:+905332825702">+90 533 282 5702</a></p></li>
+                    <li><span>Telefon</span><p><a href="tel:+905302407161">+90 530 240 71 61</a></p></li>
                     <li><span>E-mail</span><p><a href="mailto:info@ybdizayn.com">info@ybdizayn.com</a></p></li>
                     <li><span>Adres</span><p>Adem Yavuz Mah. Barışık Sk. No:6 Ümraniye/İSTANBUL</p></li>
                   </ul>
