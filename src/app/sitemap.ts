@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { getArticleCover } from "@/lib/article-covers";
 import { getAllArticles } from "@/lib/articles";
 
 const BASE_URL = "https://ybdizayn.com";
@@ -14,12 +15,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: path === "" ? 1 : 0.8,
   }));
 
-  const articleEntries: MetadataRoute.Sitemap = getAllArticles().map((article) => ({
-    url: `${BASE_URL}/${article.slug}`,
-    lastModified: article.publishDate,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  }));
+  const articleEntries: MetadataRoute.Sitemap = getAllArticles().map((article) => {
+    const cover = getArticleCover(article.slug);
+    return {
+      url: `${BASE_URL}/${article.slug}`,
+      lastModified: article.publishDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+      ...(cover && {
+        images: [`${BASE_URL}${cover.src}`],
+      }),
+    };
+  });
 
   return [...staticEntries, ...articleEntries];
 }

@@ -6,13 +6,11 @@ import PageHeader from "@/components/PageHeader";
 import Footer from "@/components/Footer";
 import NewsletterSection from "@/components/NewsletterSection";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { getArticleCover, fallbackArticleCoverSrc } from "@/lib/article-covers";
 import { getAllArticles } from "@/lib/articles";
-import articleImage from "@/lib/tropical-authentic-dining-room-interior-design-with-gallery-wall.webp";
-import articleImageAlt from "@/lib/2026Trendi-Duvar-Kağıdı-Modelleri-6.webp";
 
-const articleImages = [articleImage, articleImageAlt];
 const BASE_URL = "https://ybdizayn.com";
-const DEFAULT_OG_IMAGE = `${BASE_URL}/wp/blog-1.jpg`;
+const LISTING_OG_IMAGE = `${BASE_URL}${fallbackArticleCoverSrc}`;
 
 export const metadata: Metadata = {
   title: "Makaleler - YB Dizayn",
@@ -32,10 +30,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: DEFAULT_OG_IMAGE,
+        url: LISTING_OG_IMAGE,
         width: 1200,
         height: 630,
-        alt: "YB Dizayn makaleler sayfasi",
+        alt: "YB Dizayn duvar kağıdı koleksiyonundan makale kapak görseli",
       },
     ],
   },
@@ -44,7 +42,7 @@ export const metadata: Metadata = {
     title: "Makaleler - YB Dizayn",
     description:
       "Dijital duvar kağıdı ve duvar kağıdı rehberleri ile doğru seçim yapın.",
-    images: [DEFAULT_OG_IMAGE],
+    images: [LISTING_OG_IMAGE],
   },
   robots: {
     index: true,
@@ -75,15 +73,19 @@ export default function MakalelerPage() {
         <section className="py-16 md:py-20 bg-[#f8f6f5]">
           <div className="mx-auto max-w-7xl px-4 sm:px-6">
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {articles.map((article, index) => (
+              {articles.map((article) => {
+                const cover = getArticleCover(article.slug);
+                const imgSrc = cover?.src ?? fallbackArticleCoverSrc;
+                const imgAlt = cover?.alt ?? article.title;
+                return (
                 <article
                   key={article.slug}
                   className="rounded-2xl border border-[#3c3531]/10 bg-white overflow-hidden hover:shadow-lg transition-shadow"
                 >
                   <div className="relative aspect-[16/10]">
                     <Image
-                      src={articleImages[index % articleImages.length]}
-                      alt={article.title}
+                      src={imgSrc}
+                      alt={imgAlt}
                       fill
                       className="object-cover"
                       sizes="(max-width: 1024px) 100vw, 33vw"
@@ -115,7 +117,8 @@ export default function MakalelerPage() {
                     </Link>
                   </div>
                 </article>
-              ))}
+                );
+              })}
             </div>
           </div>
         </section>

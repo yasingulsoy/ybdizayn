@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterSection from "@/components/NewsletterSection";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { getArticleCover, fallbackArticleCoverSrc } from "@/lib/article-covers";
 import { getAllArticles, getArticleBySlug, getCommonFaqs } from "@/lib/articles";
 
 type ArticlePageProps = {
@@ -12,11 +14,7 @@ type ArticlePageProps = {
 };
 
 const BASE_URL = "https://ybdizayn.com";
-const DEFAULT_OG_IMAGES = [
-  `${BASE_URL}/wp/blog-1.jpg`,
-  `${BASE_URL}/wp/blog-2.jpg`,
-  `${BASE_URL}/wp/blog-3.jpg`,
-];
+const DEFAULT_OG_IMAGE = `${BASE_URL}/wp/blog-1.jpg`;
 
 export function generateStaticParams() {
   return getAllArticles().map((article) => ({ slug: article.slug }));
@@ -36,8 +34,9 @@ export async function generateMetadata({
   }
 
   const canonical = `${BASE_URL}/${article.slug}`;
-  const socialImage =
-    DEFAULT_OG_IMAGES[Math.abs(article.slug.length) % DEFAULT_OG_IMAGES.length];
+  const cover = getArticleCover(article.slug);
+  const socialImageAbsolute = cover ? `${BASE_URL}${cover.src}` : DEFAULT_OG_IMAGE;
+  const socialImageAlt = cover?.alt ?? article.title;
 
   return {
     title: `${article.title} | YB Dizayn`,
@@ -53,12 +52,14 @@ export async function generateMetadata({
       siteName: "YB Dizayn",
       locale: "tr_TR",
       type: "article",
+      publishedTime: `${article.publishDate}T12:00:00+03:00`,
+      modifiedTime: `${article.publishDate}T12:00:00+03:00`,
       images: [
         {
-          url: socialImage,
+          url: socialImageAbsolute,
           width: 1200,
           height: 630,
-          alt: article.title,
+          alt: socialImageAlt,
         },
       ],
     },
@@ -66,7 +67,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: article.title,
       description: article.description,
-      images: [socialImage],
+      images: [socialImageAbsolute],
     },
     robots: {
       index: true,
@@ -84,15 +85,22 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     notFound();
   }
 
+  const cover = getArticleCover(article.slug);
+  const imageUrl = cover ? `${BASE_URL}${cover.src}` : DEFAULT_OG_IMAGE;
+
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: article.title,
     description: article.description,
-    datePublished: article.publishDate,
-    dateModified: article.publishDate,
+    datePublished: `${article.publishDate}T12:00:00+03:00`,
+    dateModified: `${article.publishDate}T12:00:00+03:00`,
     inLanguage: "tr-TR",
-    image: `${BASE_URL}/wp/blog-1.jpg`,
+    image: {
+      "@type": "ImageObject",
+      url: imageUrl,
+      caption: cover?.alt ?? article.title,
+    },
     author: {
       "@type": "Organization",
       name: "YB Dizayn",
@@ -151,6 +159,23 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
           </div>
         </section>
 
+        {cover && (
+          <section className="mx-auto max-w-4xl px-4 sm:px-6 -mt-6 md:-mt-10 relative z-10">
+            <figure className="rounded-2xl overflow-hidden border border-[#3c3531]/10 shadow-lg bg-white">
+              <Image
+                src={cover.src}
+                alt={cover.alt}
+                width={1200}
+                height={675}
+                className="w-full h-auto object-cover aspect-[16/9]"
+                sizes="(max-width: 896px) 100vw, 896px"
+                priority
+              />
+              <figcaption className="sr-only">{cover.alt}</figcaption>
+            </figure>
+          </section>
+        )}
+
         <section className="mx-auto max-w-4xl px-4 sm:px-6 py-10 md:py-14">
           <article className="rounded-2xl bg-white p-6 md:p-10 border border-[#3c3531]/10 shadow-sm">
             <div className="mb-8 flex flex-wrap gap-2">
@@ -186,20 +211,19 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
             <section className="mt-10 rounded-xl border border-[#3c3531]/15 bg-[#fcfbfb] p-5">
               <h3 className="text-2xl font-semibold text-[#3c3531] mb-4">
-                Uygulama Oncesi Kontrol Listesi
+                Uygulama öncesi kontrol listesi
               </h3>
               <ul className="list-disc pl-6 space-y-2 text-[#3c3531]/90">
-                <li>Duvar olculeri netlestirildi ve fire payi eklendi.</li>
-                <li>Yuzey temizligi, astar ve gerekli tamirat tamamlandi.</li>
-                <li>Desen yonu ve ek yeri plani onceden cizildi.</li>
+                <li>Duvar ölçüleri netleştirildi ve fire payı eklendi.</li>
+                <li>Yüzey temizliği, astar ve gerekli tamirat tamamlandı.</li>
+                <li>Desen yönü ve ek yeri planı önceden çizildi.</li>
                 <li>
-                  Mekana uygun {article.keywords[0]} ve {article.keywords[1]} secimi yapildi.
+                  Mekâna uygun {article.keywords[0]} ve {article.keywords[1]} seçimi yapıldı.
                 </li>
               </ul>
               <p className="mt-4 text-[#3c3531]/85">
-                Dogru planlama ile duvar kagidi uygulamasinda hem estetik kalite hem de uzun
-                omurlu kullanim elde edilir. Profesyonel yaklasim, toplam maliyeti uzun vadede
-                dusurur.
+                Doğru planlama ile duvar kağıdı uygulamasında hem estetik kalite hem de uzun ömürlü
+                kullanım elde edilir. Profesyonel yaklaşım, toplam maliyeti uzun vadede düşürür.
               </p>
             </section>
 
@@ -220,7 +244,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             </div>
 
             <section className="mt-10">
-              <h3 className="text-2xl font-semibold text-[#3c3531] mb-4">Sikca Sorulan Sorular</h3>
+              <h3 className="text-2xl font-semibold text-[#3c3531] mb-4">Sıkça sorulan sorular</h3>
               <div className="space-y-3">
                 {commonFaqs.map((item) => (
                   <details
@@ -237,18 +261,34 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             </section>
 
             <section className="mt-10">
-              <h3 className="text-2xl font-semibold text-[#3c3531] mb-4">Benzer Makaleler</h3>
+              <h3 className="text-2xl font-semibold text-[#3c3531] mb-4">Benzer makaleler</h3>
               <div className="grid gap-3 md:grid-cols-2">
-                {relatedArticles.map((item) => (
-                  <Link
-                    key={item.slug}
-                    href={`/${item.slug}`}
-                    className="rounded-xl border border-[#3c3531]/15 bg-white p-4 hover:border-[#a47c58]/45 transition-colors"
-                  >
-                    <p className="text-sm text-[#a47c58] mb-1">{item.publishDate}</p>
-                    <p className="font-semibold text-[#3c3531]">{item.title}</p>
-                  </Link>
-                ))}
+                {relatedArticles.map((item) => {
+                  const relCover = getArticleCover(item.slug);
+                  const relSrc = relCover?.src ?? fallbackArticleCoverSrc;
+                  const relAlt = relCover?.alt ?? item.title;
+                  return (
+                    <Link
+                      key={item.slug}
+                      href={`/${item.slug}`}
+                      className="flex gap-4 rounded-xl border border-[#3c3531]/15 bg-white p-3 hover:border-[#a47c58]/45 transition-colors overflow-hidden"
+                    >
+                      <div className="relative h-24 w-28 shrink-0 rounded-lg overflow-hidden">
+                        <Image
+                          src={relSrc}
+                          alt={relAlt}
+                          fill
+                          className="object-cover"
+                          sizes="112px"
+                        />
+                      </div>
+                      <div className="min-w-0 py-1">
+                        <p className="text-sm text-[#a47c58] mb-1">{item.publishDate}</p>
+                        <p className="font-semibold text-[#3c3531] line-clamp-2 leading-snug">{item.title}</p>
+                      </div>
+                    </Link>
+                  );
+                })}
               </div>
             </section>
           </article>

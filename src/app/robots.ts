@@ -8,11 +8,12 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/"],
+        disallow: ["/api/", "/wp-admin/", "/wp-content/", "/wp-includes/"],
       },
       {
         userAgent: "Googlebot",
         allow: "/",
+        disallow: ["/api/", "/wp-admin/", "/wp-content/", "/wp-includes/"],
       },
     ],
     sitemap: `${BASE_URL}/sitemap.xml`,

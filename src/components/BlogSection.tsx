@@ -1,10 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import { getArticleCover, fallbackArticleCoverSrc } from "@/lib/article-covers";
 import { getAllArticles } from "@/lib/articles";
-import articleImage from "@/lib/tropical-authentic-dining-room-interior-design-with-gallery-wall.webp";
-import articleImageAlt from "@/lib/2026Trendi-Duvar-Kağıdı-Modelleri-6.webp";
-
-const articleImages = [articleImage, articleImageAlt];
 
 export default function BlogSection() {
   const posts = getAllArticles().slice(0, 3);
@@ -23,7 +20,11 @@ export default function BlogSection() {
         </div>
 
         <div className="grid gap-8 md:grid-cols-3">
-          {posts.map((post, index) => (
+          {posts.map((post) => {
+            const cover = getArticleCover(post.slug);
+            const src = cover?.src ?? fallbackArticleCoverSrc;
+            const alt = cover?.alt ?? post.title;
+            return (
             <article
               key={post.slug}
               className="group bg-white rounded-2xl overflow-hidden border border-[#3c3531]/10 hover:shadow-xl hover:border-[#a47c58]/30 transition-all duration-300"
@@ -31,8 +32,8 @@ export default function BlogSection() {
               <Link href={`/${post.slug}`} className="block">
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <Image
-                    src={articleImages[index % articleImages.length]}
-                    alt={post.title}
+                    src={src}
+                    alt={alt}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                     sizes="(max-width: 768px) 100vw, 33vw"
@@ -56,7 +57,8 @@ export default function BlogSection() {
                 </div>
               </Link>
             </article>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
