@@ -24,36 +24,57 @@ export const articles: Article[] = [
     slug: "duvar-kagidinizi-kendiniz-yapin",
     title: "Duvar Kağıdınızı Kendiniz Yapın: Adım Adım Uygulama Rehberi",
     description:
-      "Duvar kağıdı uygulamasını profesyonel sonuçla evde yapmak için ölçü alma, yüzey hazırlığı, yapıştırma ve ek yeri gizleme adımlarını öğrenin.",
+      "Evde duvar kağıdı uygulaması için ölçü, yüzey hazırlığı, yapıştırıcı, desen hizası ve son kontroller. Dijital duvar kağıdı ve klasik rulo için güvenli adımlar.",
     publishDate: "2026-03-23",
-    readTime: "6 dk",
+    readTime: "12 dk",
     keywords: ["duvar kağıdı", "dijital duvar kağıdı", "duvar kağıdı uygulaması"],
     sections: [
       {
-        heading: "Doğru ölçü, doğru sonuç",
+        heading: "Ölçü ve sipariş: hatanın önüne geçin",
         paragraphs: [
-          "Duvar kağıdı uygulamasında en sık hata, yanlış ölçü almaktan kaynaklanır. Her duvarın enini ve boyunu ayrı ayrı ölçerek toplam metrajı belirleyin.",
-          "Priz, kolon ve niş gibi detayları ayrıca not almak, özellikle dijital duvar kağıdı siparişlerinde desen hizasını korumanıza yardımcı olur.",
+          "Duvar kağıdı uygulamasında en sık yapılan hata, ölçü eksikliği veya tek duvara göre genelleme yapmaktır. Her duvarın enini ve boyunu ayrı ayrı ölçün; tavan–duvar birleşiminde milimetrik farklar bile son şeritte problem çıkarabilir.",
+          "Priz, anahtar, klima sini, kolon ve niş gibi unsurları çizim üzerinde işaretlemek, dijital duvar kağıdı gibi geniş panel siparişlerinde desen hizasını korumak için şarttır. Ölçüleri not defterine oda adıyla yazmak, uygulama günü karışıklığı önler.",
+          "Sipariş vermeden önce üreticinin veya tedarikçinin önerdiği fire oranını okuyun. Desen tekrarı (rapport) varsa, metrajı rapporta göre yukarı yuvarlamak gerekir.",
         ],
         bullets: [
-          "Ölçüye en az %10 fire payı ekleyin.",
-          "Tavan yüksekliği değişken ise en yüksek noktaya göre hesap yapın.",
-          "Sipariş öncesi ölçüleri iki kez kontrol edin.",
+          "Toplam metrajı bulduktan sonra en az %10 genel fire payı ekleyin.",
+          "Tavan yüksekliği duvardan duvara değişiyorsa en yüksek noktaya göre hesap yapın.",
+          "Sipariş öncesi tüm ölçüleri ikinci bir kişiyle çapraz kontrol edin.",
         ],
       },
       {
-        heading: "Yüzey hazırlığı uygulamanın yarısıdır",
+        heading: "Yüzey hazırlığı: tutunmanın temeli",
         paragraphs: [
-          "Temiz, kuru ve pürüzsüz duvar yüzeyi olmadan kaliteli yapışma beklenmez. Eski boya kabarmalarını kazıyın ve gerekli alanları macunlayın.",
-          "Astar uygulaması, hem tutunmayı artırır hem de duvar kağıdı sökülmek istendiğinde yüzeyi korur.",
+          "Temiz, kuru, sağlam ve yeterince düz bir yüzey olmadan profesyonel sonuç beklemek zordur. Kabaran eski boyayı, gevşek sıvaları ve yağlı lekeleri temizleyin; gerekirse ince macun ve zımpara ile pürüzsüz bir tabaka oluşturun.",
+          "Emici yüzeylerde uyumlu bir astar, yapıştırıcının düzgün kurumasını ve duvar kağıdının kenarlardan sökülmesini kolaylaştırır. Astar seçiminde duvar kağıdı türü ve yapıştırıcı üreticisinin teknik föyünü dikkate alın.",
+          "Yeni alçı veya çimento yüzeylerinde nem oranı düşene kadar beklemek ve kapalı ortamda gerekirse nem ölçümü yapmak uzun vadede kabarma riskini azaltır.",
         ],
       },
       {
-        heading: "Ek yerlerini görünmez hale getirin",
+        heading: "Araçlar, sıra ve çalışma ortamı",
         paragraphs: [
-          "İlk şeridi şakul yardımıyla düz bir referans çizgisine göre yerleştirin. Sonraki şeritleri desen takibine dikkat ederek kenar kenara birleştirin.",
-          "Bir lastik rulo ile hava kabarcıklarını merkezden dışa doğru alın. Taşan yapıştırıcıyı nemli mikrofiber bezle gecikmeden temizleyin.",
-          "Daha fazla ilham için Dekoartizan dekorasyon trendlerine de göz atabilirsiniz.",
+          "Plaka makası veya keskin bıçak, düz sapan veya lazer şakul, sünger rulo, yumuşak spatula, mikrofiber bez ve uygun kaplar işi hızlandırır. Metrekareyi büyük alanlarda iskele veya güvenli platform kullanımını planlayın.",
+          "Oda sıcaklığı ve hava akışı, yapıştırıcının kuruma süresini etkiler. Kapı ve pencereleri draughtan koruyun; aşırı sıcak veya çok nemli günlerde kuruma süreleri değişebilir.",
+        ],
+        bullets: [
+          "İşe başlamadan elektrik priz kapaklarını sökün veya maskeleyin.",
+          "Yapıştırıcıyı üreticinin belirttiği dinlenme süresiyle kullanın.",
+        ],
+      },
+      {
+        heading: "Yapıştırma ve ek yerlerini yönetme",
+        paragraphs: [
+          "İlk şeridi düz bir referans çizgisine göre dik yerleştirmek tüm duvarın hizasını belirler. Sonraki şeritlerde desen takibini her ekte kontrol edin; dijital duvar kağıdında panel numaraları varsa sıraya kesinlikle uyun.",
+          "Hava kabarcıklarını rulo ile merkezden dışa doğru nazikçe sıkın. Taşan yapıştırıcıyı gecikmeden nemli bezle temizleyerek desen yüzeyine sirayet etmesini engelleyin.",
+          "Köşe ve tavan birleşimlerinde fazla gerdirmeden, elastik malzemeye zarar vermeden düzgün kesim yapın. Köşe içlerinde küçük kılcal çizikler ileride kalkma olarak büyüyebilir.",
+        ],
+      },
+      {
+        heading: "Son kontrol ve bakım önerisi",
+        paragraphs: [
+          "Uygulama bittikten sonra odayı bir süre havalandırın; yapıştırıcı tam kurumadan mobilya yaslamayın veya intensif temizlik yapmayın.",
+          "Kuruma sürecinde sıcak hava üfleme cihazını doğrudan duvar kağıdına tutmaktan kaçının; ani kuruma eklerde gerilim yaratabilir.",
+          "Dekorasyon trendleri ve malzeme çeşitleri hakkında güncel içeriklere https://dekoartizan.com üzerinden de göz atarak kendi projenizi zenginleştirebilirsiniz.",
         ],
       },
     ],
@@ -62,34 +83,45 @@ export const articles: Article[] = [
     slug: "dijital-duvar-kagidi-secim-rehberi",
     title: "Dijital Duvar Kağıdı Seçim Rehberi: Mekana Uygun Deseni Bulun",
     description:
-      "Dijital duvar kağıdı seçerken oda tipi, ışık, desen ölçeği ve renk dengesi nasıl değerlendirilir? Pratik seçim rehberini inceleyin.",
+      "Dijital duvar kağıdı seçerken oda işlevi, gün ışığı, desen ölçeği ve renk psikolojisi. Salon, yatak odası ve çalışma alanı için karar verme rehberi.",
     publishDate: "2026-03-21",
-    readTime: "5 dk",
+    readTime: "11 dk",
     keywords: ["dijital duvar kağıdı", "duvar kağıdı seçimi", "mekana uygun duvar kağıdı"],
     sections: [
       {
         heading: "Mekanın kullanım amacıyla başlayın",
         paragraphs: [
-          "Salon, yatak odası ve çalışma alanı farklı atmosfer ister. Bu nedenle duvar kağıdı seçerken sadece görsele değil, mekanın kullanım yoğunluğuna da odaklanın.",
-          "Dijital duvar kağıdı alternatiflerinde tema çeşitliliği daha fazladır; minimalist, klasik veya modern çizgiyi kolayca yakalayabilirsiniz.",
+          "Salonda sosyalleşme ve televizyon izleme, yatak odasında dinlenme, çalışma köşesinde ise odaklanma beklenir. Bu nedenle duvar kağıdı seçerken yalnızca görsele değil, gün içindeki kullanım yoğunluğuna da odaklanın.",
+          "Dijital duvar kağıdı, yüksek çözünürlüklü baskı sayesinde fotoğraf, illustration veya özel desenle mekâna güçlü bir tema kazandırır. Yoğun desenli bir seçim için önce mobilya ve zemin nötr mü değerlendirin; aksi halde görsel yük artabilir.",
+          "Çocuklu veya evcil hayvanlı evlerde temizlenebilir yüzey ve dayanıklı malzeme önceliği, estetik kadar pratiklik sağlar.",
+          "Benzer yaşam tarzı senaryolarında mekân fotoğrafları ve stil önerileri için https://dekoartizan.com sayfalarına göz atmak seçeneklerinizi netleştirmenize yardımcı olur.",
         ],
       },
       {
-        heading: "Işık ve renk dengesini birlikte değerlendirin",
+        heading: "Işık yönü, cephe ve renk sıcaklığı",
         paragraphs: [
-          "Doğal ışığı az olan odalarda açık tonlu duvar kağıdı mekana ferahlık katar. Aydınlık alanlarda daha koyu veya kontrast desenler daha iyi sonuç verir.",
+          "Doğal ışığı az alan kuzey cepheli odalarda açık krem, bej veya soğuk gri tonları mekânı ferah gösterebilir. Güney cephede güçlü güneş alan salonlarda çok açık tonlar bazen soluk görünebilir; bu durumda kontrollü doygunluk taşıyan desenler daha dengelidir.",
+          "Yapay aydınlatmanın rengi (ılık beyaz, gün ışığı vb.) duvar kağıdı tonunu akşam saatlerinde değiştirir. Numuneyi hem gündüz hem akşam lambası altında değerlendirmek yanlış hayal kırıklığını önler.",
         ],
         bullets: [
-          "Kuzey cephe: krem, bej, açık gri tonlar.",
-          "Güney cephe: toprak ve vurgu renkleri.",
-          "Dar mekan: küçük ölçekli desenler.",
+          "Kuzey cephe: krem, bej, açık gri ve düşük kontrastlı desenler.",
+          "Güney cephe: toprak, zeytin ve kontrollü vurgu renkleri.",
+          "Dar koridor: küçük ölçekli motif veya dikey hafif çizgi etkisi.",
         ],
       },
       {
-        heading: "Uzun vadeli kullanım planı yapın",
+        heading: "Desen ölçeği ve odanın en–boy oranı",
         paragraphs: [
-          "Duvar kağıdı yalnızca bugünkü dekorasyona değil, gelecekteki mobilya değişimlerine de uyum sağlamalıdır. Zamansız desenler yatırım değerini korur.",
-          "Stil karşılaştırması için Dekoartizan gibi dekorasyon odaklı kaynaklardan trend analizleri incelemek faydalıdır.",
+          "Büyük ölçekli motif dar alanda baskın görünür; küçük ölçekli desen geniş salonda “çok tekrar ediyor” hissi yaratabilir. Tavan yüksekliği düşükse yatay geçişli veya sakin desenler tavanı sıkıştırmaz.",
+          "Tek duvarda büyük desen (vurgu duvarı), diğer yüzeylerde düz boya veya düz renk duvar kağıdı kombinasyonu dengeyi korur.",
+        ],
+      },
+      {
+        heading: "Uzun ömürlü ve zamansız seçim",
+        paragraphs: [
+          "Trend bir desen kısa sürede sıkılabilir; mobilya değişimlerine uyum sağlayan nötr tabanlı desenler uzun yıl memnuniyet sunar.",
+          "Dijital duvar kağıdı siparişinde üretim toleransı ve renk parti farkı konularını tedarikçiyle netleştirin; özellikle ek sipariş gerektiren büyük projelerde parti numarası önemlidir.",
+          "Stil ve trend karşılaştırmaları için dekoartizan.com üzerindeki dekorasyon ve iç mimari yazılarını düzenli incelemek seçiminizi güçlendirir.",
         ],
       },
     ],
@@ -98,34 +130,42 @@ export const articles: Article[] = [
     slug: "duvar-kagidi-renk-uyumu-nasil-yapilir",
     title: "Duvar Kağıdı Renk Uyumu Nasıl Yapılır?",
     description:
-      "Mobilya, zemin ve aydınlatma ile duvar kağıdı renk uyumunu profesyonelce kurmak için temel prensipler ve örnek kombinler.",
+      "Mobilya, zemin, tavan ve aydınlatma ile duvar kağıdı renk uyumu. 60–30–10 kuralı, sıcak–soğuk ton eşleştirme ve numune testi ile profesyonel sonuç.",
     publishDate: "2026-03-20",
-    readTime: "5 dk",
+    readTime: "10 dk",
     keywords: ["duvar kağıdı", "dijital duvar kağıdı", "renk uyumu"],
     sections: [
       {
-        heading: "60-30-10 kuralı ile denge kurun",
+        heading: "60-30-10 kuralı ile dengeli dağılım",
         paragraphs: [
-          "Dekorasyonda renk dağılımı önemlidir: %60 ana renk, %30 ikincil renk, %10 vurgu rengi. Duvar kağıdı genellikle ana veya ikincil renk katmanında yer alır.",
-          "Bu yaklaşım, özellikle hareketli desenli dijital duvar kağıdı kullanılan mekanlarda görsel karmaşayı azaltır.",
+          "İç mimarlıkta sık kullanılan 60-30-10 yaklaşımı, mekânın yaklaşık %60’ını ana renk, %30’unu ikincil renk, %10’unu vurgu rengine ayırmayı önerir. Duvar kağıdı genelde ana veya ikincil katmanda yer alır; halı ve koltuk kumaşı ile çakışıp çakışmadığını bu çerçevede kontrol edin.",
+          "Dijital duvar kağıdı çok renkli ve hareketli olduğunda, diğer yüzeylerde tek bir “köprü rengi” seçip tüm aksesuarlarda tekrar etmek düzen hissi verir.",
         ],
       },
       {
-        heading: "Mevcut mobilyaya göre ton seçin",
+        heading: "Ahşap, metal ve zeminle uyum",
         paragraphs: [
-          "Ceviz ve meşe gibi sıcak ahşaplarda toprak tonlu duvar kağıdı iyi çalışır. Gri ve siyah mobilyalarda daha nötr ya da kontrast renkler tercih edilebilir.",
+          "Ceviz ve meşe gibi sıcak ahşaplarda toprak, kiremit ve zeytin tonları doğal uyum sağlar. Soğuk gri zemin ve saten metal aksesuarlarla birlikte düşünüyorsanız, duvar kağıdında çok sıcak turuncu tabanlar yerine griye çalan nötrler daha uyumlu olabilir.",
+          "Halı desenli ve renkli ise duvar daha sakin kalmalıdır; aksi durumda iki büyük yüzey birbiriyle yarışır.",
         ],
         bullets: [
-          "Açık mobilya + pastel desen = yumuşak atmosfer",
-          "Koyu mobilya + açık fon = derinlik etkisi",
-          "Metalik aksesuar + sade zemin = modern görünüm",
+          "Açık meşe mobilya + pastel desenli duvar kağıdı: yumuşak atmosfer.",
+          "Koyu antrasit mobilya + açık fonlu desen: derinlik ve kontrast.",
+          "Krom detay + düşük doygun desen: modern çizgi.",
         ],
       },
       {
-        heading: "Numune testi yapmadan karar vermeyin",
+        heading: "Monokromatik ve komplementer stratejiler",
         paragraphs: [
-          "Aynı duvar kağıdı gün ışığında ve akşam aydınlatmasında farklı görünebilir. Seçimi kalıcı hale getirmeden önce küçük numune ile duvarda test yapın.",
-          "Trend renk geçişlerini takip etmek için Dekoartizan içerikleri de iyi bir referans sunar.",
+          "Monokromatik palet (aynı rengin tonları) sakin ve “yüksek bütünlük” verir. Komplementer (zıt spektrum) vurgularda ise tek duvarda güçlü bir renk, diğerlerinde nötr kullanmak göz yormaz.",
+          "Renk körlüğü veya ekran farkı nedeniyle dijital görsel ile gerçek baskı arasında ton farkı olabilir; nihai kararı fiziksel numune ile verin.",
+        ],
+      },
+      {
+        heading: "Numune ve gün–gece testi",
+        paragraphs: [
+          "Aynı duvar kağıdı örneği kuzey ve güney duvara, farklı saatlerde farklı görünebilir. Mümkünse A4 veya rulo numuneyi birkaç gün aynı duvarda tutup sabah–öğle–akşam gözlemleyin.",
+          "Trend renk geçişlerini takip etmek için https://dekoartizan.com içerikleri güncel kombinasyon fikirleri sunar.",
         ],
       },
     ],
@@ -134,33 +174,42 @@ export const articles: Article[] = [
     slug: "dijital-duvar-kagidi-ile-kucuk-odalar-buyuk-gorunsun",
     title: "Dijital Duvar Kağıdı ile Küçük Odaları Daha Büyük Göstermenin Yolları",
     description:
-      "Küçük mekanlarda dijital duvar kağıdı ile derinlik etkisi oluşturmak, tavanı yüksek göstermek ve alan algısını genişletmek için ipuçları.",
+      "Küçük mekanda dijital duvar kağıdı ile derinlik, tavan yüksekliği illüzyonu ve ferahlık. Renk, desen ölçeği ve vurgu duvarı stratejileri.",
     publishDate: "2026-03-18",
-    readTime: "4 dk",
+    readTime: "10 dk",
     keywords: ["dijital duvar kağıdı", "duvar kağıdı", "küçük oda dekorasyonu"],
     sections: [
       {
-        heading: "Perspektif etkili desenleri tercih edin",
+        heading: "Perspektif ve derinlik etkisi",
         paragraphs: [
-          "Uzaklaşan çizgiler, soft geometrik formlar ve yatay geçişler küçük mekanlarda derinlik algısını artırır. Dijital duvar kağıdı baskılarında bu etki daha net elde edilir.",
+          "Uzaklaşan yol, yumuşak orman perspektifi veya hafif geometrik ileri–geri katmanlar küçük odada “derinlik” illüzyonu yaratır. Dijital duvar kağıdı bu tür görsellerde çözünürlük avantajı sağlar.",
+          "Çok karışık ve küçük tekrarlı motif gözü yorar; tek odaklı, havadar bir kompozisyon daha geniş algı verir.",
         ],
       },
       {
-        heading: "Dikey vurgu ile tavan yüksekliği hissi",
+        heading: "Dikey çizgi ve tavan hissi",
         paragraphs: [
-          "Dikey çizgili duvar kağıdı, özellikle alçak tavanlı odalarda yukarı yönlü bir bakış oluşturur. Böylece mekan daha yüksek algılanır.",
+          "İnce dikey çizgiler veya hafif dikey doku, alçak tavanlı odalarda bakışı yukarı çeker. Ancak çizgileri dört duvara yaymak yerine tek duvarda veya köşede kullanmak dengeli kalır.",
+          "Tavanı açık renk ve mümkünse mat tutmak, duvar deseninin baskınlığını dengelemeye yardımcı olur.",
         ],
         bullets: [
-          "Tek duvarda vurgu uygulaması yapın.",
-          "Koyu tavan yerine açık tavan boyası kullanın.",
-          "Perdeyi tavandan başlatın.",
+          "Tek duvarda vurgu; diğer yüzeylerde sakin ton.",
+          "Perdeyi tavandan zemine uzatıp storları geniş tutmak dikey süreklilik sağlar.",
+          "Parlak lake mobilya yansıması ile desen “çiftlenmesin” diye konum planlayın.",
         ],
       },
       {
-        heading: "Aşırı kontrasttan kaçının",
+        heading: "Açık tonlar ve kontrast sınırlaması",
         paragraphs: [
-          "Küçük alanda çok sert renk geçişleri mekanı daha dar gösterebilir. Duvar kağıdı ile mobilya arasında yumuşak tonal geçişler tercih edin.",
-          "Benzer uygulama örnekleri için Dekoartizan sayfalarını inceleyebilirsiniz.",
+          "Küçük alanda siyah–beyaz sert kontrast mekânı “keskin” ve dar gösterebilir. Yumuşak kontrastlı, gölgeli geçişli desenler daha geniş algı verir.",
+          "Zemin halısı koyuysa duvarları bir ton açık tutmak dengeyi sağlar.",
+        ],
+      },
+      {
+        heading: "Mobilya ölçeği ve boşluk bırakma",
+        paragraphs: [
+          "Küçük odada büyük mobilya ölçeği duvarın neredeyse tamamını kaplıyorsa desenin büyük kısmı görünmez olur. Bu durumda ya mobilyayı sadeleştirin ya da desenin en etkileyici kısmının görünen bölgeye denk gelmesini planlayın.",
+          "Benzer uygulama örnekleri için dekoartizan.com sayfaları referans olabilir.",
         ],
       },
     ],
@@ -169,34 +218,41 @@ export const articles: Article[] = [
     slug: "duvar-kagidi-bakimi-ve-uzun-omurlu-kullanim",
     title: "Duvar Kağıdı Bakımı ve Uzun Ömürlü Kullanım İpuçları",
     description:
-      "Duvar kağıdı yüzeyini yıpratmadan temizleme, nemden koruma ve uzun ömürlü kullanım için uygulanabilir bakım adımları.",
+      "Duvar kağıdı ve dijital duvar kağıdı temizliği, nem kontrolü, leke çıkarma ve onarım. Yüzey tipine göre doğru ürün ve sıklık.",
     publishDate: "2026-03-16",
-    readTime: "5 dk",
+    readTime: "11 dk",
     keywords: ["duvar kağıdı bakımı", "duvar kağıdı", "dijital duvar kağıdı temizliği"],
     sections: [
       {
-        heading: "Düzenli ve nazik temizlik yapın",
+        heading: "Rutin temizlik alışkanlığı",
         paragraphs: [
-          "Toz birikimi desenin canlılığını azaltır. Haftalık kuru mikrofiber bez temizliği, duvar kağıdı ömrünü uzatır.",
-          "Leke oluştuğunda sert kimyasallar yerine nötr sabunlu hafif nemli bez kullanın.",
-        ],
-      },
-      {
-        heading: "Nem ve buhar kontrolü kritik",
-        paragraphs: [
-          "Mutfak ve banyo yakınında kullanılan duvar kağıdı, yoğun buhara maruz kalıyorsa kenarlardan açılma riski artar. Ortam havalandırmasını güçlendirmek önemlidir.",
+          "Toz, özellikle kabartmalı ve dokulu yüzeylerde birikerek deseni matlaştırır. Haftalık kuru veya çok hafif nemli mikrofiber bezle yukarıdan aşağı silmek yüzeyi çizmeden temizler.",
+          "Vakumlama yerine bez tercih etmek, uçların ve köşelerin çekilmesini azaltır. Sert fırçalardan kaçının.",
         ],
         bullets: [
-          "Pencere havalandırmasını günlük rutine ekleyin.",
-          "Yoğun nemli dönemlerde nem alıcı cihaz kullanın.",
-          "Kenar kalkmalarını erken fark edip müdahale edin.",
+          "Aşındırıcı sünger ve kolonya gibi agresif ürünlerden uzak durun.",
+          "Leke anında müdahale edin; kurumuş leke daha zor çıkar.",
         ],
       },
       {
-        heading: "Küçük onarımları geciktirmeyin",
+        heading: "Nem, buhar ve mutfak kullanımı",
         paragraphs: [
-          "Ufak bir deformasyon zamanla büyüyebilir. Aynı desenden yedek parça bulundurmak hızlı onarım avantajı sağlar.",
-          "Bakım ve dekor güncellemeleri için Dekoartizan içeriklerinden fikir alabilirsiniz.",
+          "Mutfak ve banyo bitişi duvarlarda yağlı buhar ve sıçrama, kenar bantlarında zayıflamaya yol açabilir. Davlumbaz kullanımı, kısa süreli yoğun buhar ve düzenli havalandırma önemlidir.",
+          "Yoğun nemli mevsimlerde iç ortam nemi izlenmeli; sürekli küf riski varsa önce yapısal nem çözümü düşünülmeli, duvar kağıdı semptomu tedavi etmez.",
+        ],
+      },
+      {
+        heading: "Silinebilir yüzeyler ve üretici önerisi",
+        paragraphs: [
+          "“Silinebilir” etiketi her üründe aynı dayanımı garanti etmez. Temizlik öncesi üreticinin izin verdiği deterjan türü ve sürtünme limitini okuyun.",
+          "Önce görünmeyen köşede küçük deneme yaparak renk veya yüzey değişimi olup olmadığını kontrol edin.",
+        ],
+      },
+      {
+        heading: "Küçük onarım ve yedek parça",
+        paragraphs: [
+          "Küçük sıyrık veya köşe kalkması erken müdahale ile büyümeden kapatılabilir. Aynı desen ve partiden yedek şerit bulundurmak kesim–yama onarımını mümkün kılar.",
+          "Bakım ve dekor güncellemeleri için https://dekoartizan.com içerikleri ilham verebilir.",
         ],
       },
     ],
@@ -205,33 +261,42 @@ export const articles: Article[] = [
     slug: "ofislerde-duvar-kagidi-kullanimi",
     title: "Ofislerde Duvar Kağıdı Kullanımı: Kurumsal ve Modern Çözümler",
     description:
-      "Ofis dekorasyonunda duvar kağıdı ile marka kimliğini güçlendirmek, çalışan motivasyonunu artırmak ve profesyonel görünüm sağlamak için öneriler.",
+      "Ofis ve çalışma alanlarında duvar kağıdı ve dijital duvar kağıdı ile marka kimliği, verimlilik ve dayanıklılık. Karşılama, açık ofis ve toplantı odası örnekleri.",
     publishDate: "2026-03-14",
-    readTime: "6 dk",
+    readTime: "12 dk",
     keywords: ["duvar kağıdı", "dijital duvar kağıdı", "ofis dekorasyonu"],
     sections: [
       {
-        heading: "Marka kimliğini duvara taşıyın",
+        heading: "Marka kimliğini fiziksel deneyime dönüştürün",
         paragraphs: [
-          "Kurumsal renkler ve logoya uyumlu dijital duvar kağıdı tasarımları, ofis algısını güçlendirir. Özellikle giriş alanı ve toplantı odaları için etkilidir.",
+          "Kurumsal renk paleti ve logonun tonlarıyla uyumlu dijital duvar kağıdı, ziyaretçinin ilk izlenimini güçlendirir. Giriş holü, asansör önü veya marka duvarı için yüksek çözünürlüklü baskı net görünüm sağlar.",
+          "Çok parlak veya çok hareketli desen, karşılama alanında kısa süreli dikkat çeker; uzun süre bekleyen ziyaretçiler için gözü yormayan denge aranmalıdır.",
         ],
       },
       {
-        heading: "Fonksiyonel alanlara göre desen seçin",
+        heading: "Alan tipine göre desen seçimi",
         paragraphs: [
-          "Sessiz çalışma alanlarında sakin ve nötr desenler verimliliği artırırken, ortak alanlarda daha enerjik tonlar tercih edilebilir.",
+          "Odaklanma gerektiren açık ofis bölgelerinde nötr, düşük kontrastlı desenler; kreatif ekipler için kontrollü bir “enerji” tonu taşıyan vurgu duvarı tercih edilebilir.",
+          "Toplantı odasında arka planda desen varsa, ekran yansıması ve kamera görüşü için parlaklık kontrolü yapılmalıdır.",
         ],
         bullets: [
-          "Toplantı odası: dikkat dağıtmayan desen",
-          "Karşılama alanı: güçlü marka vurgusu",
-          "Sosyal alan: sıcak ve motive edici renkler",
+          "Toplantı odası: dikkat dağıtmayan, sakin doku.",
+          "Karşılama: marka hikayesini destekleyen güçlü görsel.",
+          "Mola alanı: sıcak tonlarla çalışan dostça atmosfer.",
         ],
       },
       {
-        heading: "Akustik ve bakım planını unutmayın",
+        heading: "Yoğun trafik ve bakım maliyeti",
         paragraphs: [
-          "Duvar kağıdı tek başına akustik çözüm olmasa da doğru yüzey katmanları ile yankı hissi azaltılabilir. Kolay temizlenen yüzeyler yoğun ofis kullanımında avantaj sağlar.",
-          "Kurumsal dekorasyon trendlerini karşılaştırmak için Dekoartizan benzeri kaynaklar değerlidir.",
+          "Koridor ve fotokopi yakını gibi bölgelerde çizilmeye dayanıklı yüzey ve kolay silinebilir seçenekler işletme maliyetini düşürür.",
+          "Gece temizlik firması ile uyumlu, kimyasal toleransı yüksek ürün seçimi yerleşik sözleşmelerde sorun çıkarmaz.",
+        ],
+      },
+      {
+        heading: "Akustik beklentileri doğru çerçeveleyin",
+        paragraphs: [
+          "Duvar kağıdı tek başına tam akustik panelli çözüm yerine geçmez; ancak yüzey hareketi ve malzeme katmanı ile yankı hissini hafif destekleyebilir. Asıl akustik ihtiyaç için panel ve tavan çözümleri ayrı planlanmalıdır.",
+          "Kurumsal dekorasyon trendlerini dekoartizan.com sitesindeki trend yazılarıyla kıyaslamak güncel stil kararı vermenize yardımcı olur.",
         ],
       },
     ],
@@ -240,33 +305,41 @@ export const articles: Article[] = [
     slug: "oteller-icin-dijital-duvar-kagidi-cozumleri",
     title: "Oteller İçin Dijital Duvar Kağıdı Çözümleri",
     description:
-      "Otel odası, lobi ve koridorlarda dijital duvar kağıdı kullanımıyla konuk deneyimini güçlendiren estetik ve dayanıklı çözümler.",
+      "Otel lobisi, koridor ve konaklama biriminde dijital duvar kağıdı: konsept bütünlüğü, fire ve parti yönetimi, yüksek trafik dayanımı.",
     publishDate: "2026-03-12",
-    readTime: "5 dk",
+    readTime: "11 dk",
     keywords: ["dijital duvar kağıdı", "duvar kağıdı", "otel dekorasyonu"],
     sections: [
       {
-        heading: "İlk izlenimi lobi alanında oluşturun",
+        heading: "Lobide ilk izlenim ve marka farklılaşması",
         paragraphs: [
-          "Konukların ilk teması olan lobide kullanılan duvar kağıdı, tesisin karakterini doğrudan yansıtır. Özgün dijital duvar kağıdı tasarımları markayı farklılaştırır.",
+          "Konuğun tesisle kurduğu ilk duygusal bağ çoğu zaman lobi ve resepsiyon çevresinde oluşur. Özgün dijital duvar kağıdı tasarımları, yerel kültüre veya marka hikayesine referans vererek oteli rakiplerinden ayırır.",
+          "Çift yükseklikli lobilerde panel birleşimlerinin planlanması ve erişim iskelesi uygulaması maliyet kalemini etkiler; proje başında netleştirilmelidir.",
         ],
       },
       {
-        heading: "Oda konseptinde bütünlük sağlayın",
+        heading: "Oda tipleri arasında tutarlı dil",
         paragraphs: [
-          "Oda tiplerine göre tematik ama ortak çizgide desen kullanmak, tesis genelinde tutarlı bir deneyim oluşturur.",
+          "Standart, deluxe ve suit odalarda renk ve motif ailesi korunup yoğunluk değiştirilirse tesis bütünlüğü bozulmaz. Koridor deseni odalara “ön bahşiş” gibi hazırlayıcı bir geçiş sunabilir.",
         ],
         bullets: [
-          "Standart oda: sakin ve dinlendirici tonlar",
-          "Suit oda: premium dokular ve vurgular",
-          "Koridor: yönlendiren akıcı desenler",
+          "Standart oda: dinlendirici nötr taban.",
+          "Suit: premium doku ve daha büyük motif ölçeği.",
+          "Koridor: yönlendirici, tekrar göz yormayan desen.",
         ],
       },
       {
-        heading: "Dayanıklılık ve bakım dengesi",
+        heading: "Yangın, hijyen ve düzenlemeler",
         paragraphs: [
-          "Yüksek sirkülasyonlu alanlarda silinebilir ve dayanıklı yüzey seçimi işletme maliyetini azaltır. Doğru malzeme seçimi uzun dönem performans sağlar.",
-          "Konaklama sektörüne yönelik estetik örnekler için Dekoartizan gibi platformlar takip edilebilir.",
+          "Ticari projelerde kullanılan malzemelerin yönetmeliklere uygun sınıflandırması ve sertifikaları proje onay süreçlerinde istenir. Bu nedenle tedarikçiyle teknik dokümantasyonu önceden talep edin.",
+          "Yüksek el değen yüzeylerde silinebilirlik ve antimikrobiyal iddialar varsa bağımsız test raporlarını sorun.",
+        ],
+      },
+      {
+        heading: "Operasyonel dayanıklılık",
+        paragraphs: [
+          "Bagaj çarpması, temizlik arabası ve vale trafiği lobilerde yüzey yıpranmasını hızlandırır. Uygun yüzey dayanımı ve zamanında yerel onarım protokolü operasyonu destekler.",
+          "Konaklama sektörüne yönelik görsel trendler için dekoartizan.com gibi güncel içerik sunan platformları düzenli takip etmek uygundur.",
         ],
       },
     ],
@@ -275,33 +348,41 @@ export const articles: Article[] = [
     slug: "cocuk-odasi-duvar-kagidi-fikirleri",
     title: "Çocuk Odası Duvar Kağıdı Fikirleri: Eğlenceli ve Güvenli Tasarımlar",
     description:
-      "Çocuk odasında yaş grubuna uygun duvar kağıdı seçimi, renk psikolojisi ve güvenli malzeme tercihleri hakkında pratik rehber.",
+      "Çocuk odası için duvar kağıdı ve dijital duvar kağıdı: yaş gruplarına göre tema, renk psikolojisi, güvenli malzeme ve güncellenebilir tasarım.",
     publishDate: "2026-03-10",
-    readTime: "5 dk",
+    readTime: "11 dk",
     keywords: ["duvar kağıdı", "dijital duvar kağıdı", "çocuk odası dekorasyonu"],
     sections: [
       {
-        heading: "Yaş grubuna göre tema belirleyin",
+        heading: "Yaş grubuna göre tema ve ölçek",
         paragraphs: [
-          "Bebek odalarında yumuşak tonlar, okul çağında ise ilgi alanı odaklı desenler daha doğru sonuç verir. Dijital duvar kağıdı ile kişiselleştirme kolaylaşır.",
+          "Bebek ve küçük çocuk döneminde yumuşak pasteller ve sade motifler; okul çağında hobiler, haritalar veya sevilen renkler öne çıkar. Ergenlik öncesi dönemde çocuğun görüşünü almak odanın sahiplenilmesini artırır.",
+          "Dijital duvar kağıdı ile isim, sevilen karakter tonunda kişiselleştirme mümkündür; fakat çok modaya bağlı temalar kısa sürede sıkılabilir, bu yüzden “kolay güncellenebilir” vurgu duvarı stratejisi düşünün.",
         ],
       },
       {
-        heading: "Renk psikolojisinden yararlanın",
+        heading: "Renk dengesi ve uyku alanı",
         paragraphs: [
-          "Pastel mavi ve yeşil tonlar sakinleştirici etki sunarken, sıcak vurgu renkleri oyun alanında enerji sağlar. Dengeyi korumak önemlidir.",
+          "Yüksek doygun turuncu veya kırmızı, oyun için uygunken uyku köşesinde fazla uyarıcı olabilir. Uyku alanına daha sakin tonlar, oyun duvarına kontrollü canlılık vermek işlevsel ayrım sağlar.",
         ],
         bullets: [
-          "Uyku alanında düşük kontrast",
-          "Oyun alanında kontrollü canlı renk",
-          "Çalışma köşesinde dikkat dağıtmayan desen",
+          "Uyku bölümü: düşük kontrast, mat yüzey.",
+          "Oyun duvarı: eğlenceli ve sınırlı alanda yoğun desen.",
+          "Çalışma köşesi: dikkat dağıtmayan geometri veya düz ton.",
         ],
       },
       {
-        heading: "Sağlıklı malzeme seçimi yapın",
+        heading: "Malzeme, koku ve temizlik",
         paragraphs: [
-          "Çocuk odasında kullanılan duvar kağıdı malzemesinin düşük koku ve kolay temizlenebilir özellikte olması tercih edilmelidir.",
-          "İlham veren çocuk odası kombinleri için Dekoartizan içeriklerini inceleyebilirsiniz.",
+          "Çocuk odasında düşük VOC ve üretici bilgilendirmesine göre “çocuk odasına uygun” etiketli ürünler tercih edilmelidir. Kurulum sonrası odayı planlı şekilde havalandırın.",
+          "Silinebilir yüzey, pastel boya lekeleri ve parmak izlerinde pratiklik sağlar.",
+        ],
+      },
+      {
+        heading: "Güvenli mobilya yerleşimi",
+        paragraphs: [
+          "Ağır kitaplık ve karyolaları duvar kağıdı vurgu duvarına yaslamadan önce duvara sabitleme ve deprem riskine yönelik önlemler çocuk güvenliği için önceliklidir.",
+          "İlham kombinleri için https://dekoartizan.com içerikleri farklı yaş gruplarına örnek sunabilir.",
         ],
       },
     ],
@@ -310,33 +391,41 @@ export const articles: Article[] = [
     slug: "duvar-kagidi-trendleri-2026",
     title: "Duvar Kağıdı Trendleri 2026: Öne Çıkan Desen ve Renkler",
     description:
-      "2026 yılında duvar kağıdı trendlerinde öne çıkan doğal dokular, büyük ölçekli desenler, modern minimal çizgiler ve renk paletleri.",
+      "2026 duvar kağıdı ve dijital duvar kağıdı trendleri: doğal doku, büyük ölçekli botanik, zamansız toprak paleti ve kişiye özel baskı.",
     publishDate: "2026-03-08",
-    readTime: "4 dk",
+    readTime: "10 dk",
     keywords: ["duvar kağıdı trendleri", "dijital duvar kağıdı", "duvar kağıdı"],
     sections: [
       {
-        heading: "Doğal doku etkisi yükselişte",
+        heading: "Doğadan ilham: doku ve huzur",
         paragraphs: [
-          "Taş, keten ve beton hissi veren yüzeyler 2026 trendlerinde güçlü şekilde öne çıkıyor. Bu yaklaşım mekana sakin ama karakterli bir hava katıyor.",
+          "Taş, keten, beton ve ahşapın yumuşatılmış yorumları, 2026’da mekâna sakin ama karakterli bir zemin veriyor. Gerçek malzeme kadar bakım istemeyen bu görünümler, özellikle yoğun şehir hayatında tercih ediliyor.",
+          "Yeşilin farklı tonları ve botanik çizimler, iç mekân–dış mekân bağını güçlendirir.",
         ],
       },
       {
-        heading: "Büyük desen, kontrollü kullanım",
+        heading: "Büyük desenler ve tek duvarda vurgu",
         paragraphs: [
-          "Geniş ölçekli desenler özellikle vurgu duvarlarında etkili. Tüm mekana uygulamak yerine tek duvarda kullanıldığında daha dengeli görünüm elde edilir.",
+          "Geniş ölçekli çiçek ve yaprak motifleri, tüm odaya yayıldığında baskın olabilir; tek duvarda kullanıldığında ise lüks ve sanatsal bir odak oluşturur.",
         ],
         bullets: [
-          "Botanik desenler",
-          "Soyut geometrik geçişler",
-          "Toprak ve taş tonları",
+          "Botanik ve sürdürülebilirlik temalı grafikler.",
+          "Yumuşak geometri ve organik formlar.",
+          "Toprak, kil, taş ve bitki tonları.",
         ],
       },
       {
-        heading: "Dijital baskıda kişiselleştirme dönemi",
+        heading: "Dijital baskı ile kişiselleştirme",
         paragraphs: [
-          "Dijital duvar kağıdı çözümleri sayesinde kullanıcılar artık standart katalog yerine kendi mekanına özel desen tercih ediyor.",
-          "Trendleri kıyaslamak için Dekoartizan yayınlarını düzenli takip edebilirsiniz.",
+          "Standart kataloglardan sıkılan kullanıcılar, kendi fotoğrafı, illüstrasyonu veya mekâna ölçülü tasarımı dijital duvar kağıdı olarak bastırabiliyor. Bu trend özellikle oturma odası ve yatak başı duvarlarında güçleniyor.",
+          "Kişiselleştirmede çözünürlük ve renk yönetimi (profil ve kalibrasyon) sonuç kalitesini belirler.",
+        ],
+      },
+      {
+        heading: "Trend ile zamansızlığı dengelemek",
+        paragraphs: [
+          "Modaya tam kapanmak yerine nötr bir taban üzerinde trend vurgusu kullanmak, birkaç yıl sonra yenileme ihtiyacını azaltır.",
+          "Trend analizleri ve uygulama fotoğrafları için dekoartizan.com yayınlarını takip etmek faydalıdır.",
         ],
       },
     ],
@@ -345,33 +434,42 @@ export const articles: Article[] = [
     slug: "duvar-kagidi-fiyatlarini-etkileyen-faktorler",
     title: "Duvar Kağıdı Fiyatlarını Etkileyen Faktörler",
     description:
-      "Duvar kağıdı fiyatları neden değişir? Malzeme türü, baskı kalitesi, metraj, uygulama zorluğu ve bakım maliyetinin toplam etkisi.",
+      "Duvar kağıdı ve dijital duvar kağıdı fiyatını belirleyen metraj, malzeme sınıfı, baskı çözünürlüğü, özel tasarım, yüzey hazırlığı ve uygulama zorluğu.",
     publishDate: "2026-03-06",
-    readTime: "5 dk",
+    readTime: "11 dk",
     keywords: ["duvar kağıdı fiyatları", "dijital duvar kağıdı", "duvar kağıdı"],
     sections: [
       {
-        heading: "Malzeme kalitesi ve baskı teknolojisi",
+        heading: "Malzeme sınıfı ve baskı teknolojisi",
         paragraphs: [
-          "Fiyatı belirleyen ilk unsur malzeme sınıfıdır. Tekstil tabanlı ve yüksek çözünürlüklü dijital duvar kağıdı ürünleri daha uzun ömür sunduğu için farklı fiyatlanır.",
+          "Vinil, dokulu non-woven veya tekstil tabanlı ürünler farklı dayanım ve fiyat seviyelerinde gelir. Dijital duvar kağıdı için kullanılan mürekkep kalitesi, UV dayanımı ve laminasyon yaşam süresini uzatır.",
+          "Marka ve koleksiyon karşılaştırması yaparken dekoartizan.com üzerindeki güncel yazılar, segmentler arası farkları anlamanızda faydalı olabilir.",
+          "Aynı görseli düşük çözünürlükte basmak maliyeti düşürür fakat yakından pikselli görünüm riski doğurur.",
         ],
       },
       {
-        heading: "Metraj ve uygulama detayı",
+        heading: "Metraj, rapport ve fire",
         paragraphs: [
-          "Toplam duvar alanı arttıkça maliyet artar, ancak birim fiyat dengelenebilir. Kolon, kavis, niş ve yüksek tavan gibi detaylar uygulama maliyetini etkiler.",
+          "Desen tekrarı yüksek veya panel genişliği standarttan farklı ürünlerde fire oranı artar. Bu doğrudan toplam m² fiyatına yansır.",
+          "Niş, kolon ve tavan çıkıntıları uygulama süresini ve hata riskini artırarak işçilik maliyetini yükseltir.",
         ],
         bullets: [
-          "Toplam metrekare",
-          "Yüzey hazırlığı ihtiyacı",
-          "Desen hizalama zorluk seviyesi",
+          "Toplam net metrekare + üretici fire önerisi.",
+          "Yüzey düzeltme ve astar ihtiyacı.",
+          "Yüksek tavan ve iskele gereksinimi.",
+        ],
+      },
+      {
+        heading: "Tasarım lisansı ve özel üretim",
+        paragraphs: [
+          "Telifli sanat eseri veya stok görsel lisansı bazı dijital baskılarda ek kalemdir. Kişiye özel vektör çizim veya renk revizyonu da teklifi etkiler.",
         ],
       },
       {
         heading: "Toplam sahip olma maliyeti",
         paragraphs: [
-          "Sadece satın alma fiyatına değil, bakım kolaylığına ve kullanım ömrüne odaklanmak daha doğru bütçe planı sağlar.",
-          "Fiyat/performans karşılaştırmaları için Dekoartizan içeriklerine de göz atabilirsiniz.",
+          "İlk satın alma fiyatı düşük olsa bile sık bakım veya erken yenileme gerektiren ürün uzun vadede pahalı olabilir. Silinebilirlik, kenar dayanımı ve garanti süreleri karşılaştırmada sorulmalıdır.",
+          "Fiyat–performans örnekleri için dekoartizan.com içeriklerine göz atılabilir.",
         ],
       },
     ],
@@ -380,42 +478,49 @@ export const articles: Article[] = [
     slug: "duvar-kagidi-uygulamasinda-sik-yapilan-hatalar",
     title: "Duvar Kağıdı Uygulamasında Sık Yapılan Hatalar ve Çözümleri",
     description:
-      "Duvar kağıdı uygulamasında en çok yapılan hataları ve profesyonel çözümleri öğrenin: ölçü, yüzey hazırlığı, ek yeri ve yapıştırıcı seçimi.",
+      "Duvar kağıdı ve dijital duvar kağıdı uygulamasında ölçü, yüzey, yapıştırıcı, desen hizası ve kuruma süreleriyle ilgili yaygın hataların profesyonel çözümleri.",
     publishDate: "2026-03-05",
-    readTime: "7 dk",
+    readTime: "13 dk",
     keywords: ["duvar kağıdı", "dijital duvar kağıdı", "duvar kağıdı uygulama hataları"],
     sections: [
       {
-        heading: "Yanlis olcu ve fire hesabi",
+        heading: "Yanlış ölçü ve yetersiz fire",
         paragraphs: [
-          "Duvar kagidi uygulamasinda maliyet ve sonuc kalitesini bozan ilk sorun yanlis metraj hesaplamasidir. Tek duvar olcusu ile tum mekanin siparisini vermek genelde yetersiz kalir.",
-          "Ozellikle dijital duvar kagidi desenlerinde eksik metraj, desen devami problemlerine yol acar.",
+          "Maliyeti ve sonuç kalitesini bozan en yaygın sorun, tek duvar ölçüsüyle tüm odayı sipariş etmek veya kapı–pencere düşümünü yanlış yorumlamaktır. Dijital duvar kağıdı büyük panellerde eksik metraj, desen sürekliliğini bölerek tamir edilemez hatalara yol açabilir.",
+          "Her duvar için brüt alan hesabını ayrı yapın; kritik eşiklerde ek şerit siparişi ihtimalini değerlendirin.",
         ],
         bullets: [
-          "Her duvari ayri olcun ve not edin.",
-          "Yuzey detaylari icin ek pay birakin.",
-          "Toplam alana en az %10 fire ekleyin.",
+          "Her duvarı ayrı ölçün, yükseklik farklarını not edin.",
+          "Desen rapportu varsa üreticinin önerdiği fireyi uygulayın.",
+          "Şerit genişliği ve panel yönünü (dikey/yatay) planlayın.",
         ],
       },
       {
-        heading: "Yuzey hazirligini atlamak",
+        heading: "Yüzey hazırlığını atlama",
         paragraphs: [
-          "Nemli, kabaran veya tozlu duvara uygulama yapmak, kisa surede kenar kalkmasi ve kabarcik olusumuna neden olur.",
-          "Astar ve duvar tamirati, duvar kagidinin tutunmasini ciddi olcude guclendirir.",
+          "Tozlu, yağlı veya nemli duvarda yapıştırıcı tutunmaz; kısa sürede kabarma ve kenar kalkması görülür. Kabaran boya ve gevşek sıvalar mutlaka giderilmelidir.",
+          "Emicilik farklı bölgelerde (eski onarım–yeni alçı) yapıştırıcıyı farklı miktarda uygulama veya astar ile dengeleme gerekebilir.",
         ],
       },
       {
-        heading: "Yanlis yapistirici secimi",
+        heading: "Yanlış yapıştırıcı veya aşırı/eksik sürme",
         paragraphs: [
-          "Her duvar kagidi ayni yapistirici ile uygulanmaz. Malzeme turu ve yuzeyin emiciligine uygun urun secilmelidir.",
-          "Dogru urun secimi icin teknik veri dokumani kontrol edilmelidir.",
+          "Her duvar kağıdı aynı yapıştırıcı ile uyumlu değildir. Ağır dokulu ürünlerde güçlü yapıştırıcı; hafif vinilde üretici önerisi farklı olabilir.",
+          "Çok kalın sürmek duvara hava kabarcığı, çok ince sürmek ise kenarlarda tutunmama riski doğurur.",
         ],
       },
       {
-        heading: "Daha stabil sonuc icin profesyonel plan",
+        heading: "Desen hizası ve sıra disiplini",
         paragraphs: [
-          "Uygulama sirasi, kesim yonu ve desen takibi en basta planlandiginda hata payi duser. Is adimlarinin yazili olarak belirlenmesi uygulamayi hizlandirir.",
-          "Detayli ornekleri Dekoartizan icerikleriyle birlikte inceleyerek dogru uygulama stratejisi kurabilirsiniz.",
+          "Panelleri rastgele sırada asmak desen kaymasına neden olur. Numaralı dijital duvar kağıdı setlerinde sıra ve yön talimatlarına harfiyen uyulmalıdır.",
+          "Işık geliş yönü gölgelerde ek çizgilerini belirginleştirebilir; ilk paneli ana bakış açısına göre hizalayın.",
+        ],
+      },
+      {
+        heading: "Profesyonel plan ve kontrol listesi",
+        paragraphs: [
+          "Kesim sırası, sandalye–iş platformu konumu ve elektrik kesintisi günü önceden netleştiğinde süre aşımı ve hata azalır.",
+          "Detaylı görsel örnekler için https://dekoartizan.com rehberleri uygulama öncesi okunabilir.",
         ],
       },
     ],
@@ -424,42 +529,41 @@ export const articles: Article[] = [
     slug: "dijital-duvar-kagidi-mi-boya-mi",
     title: "Dijital Duvar Kağıdı mı Boya mı? Karşılaştırmalı Rehber",
     description:
-      "Duvar dekorasyonunda dijital duvar kağıdı ve boya karşılaştırması: estetik, maliyet, dayanıklılık, bakım ve uygulama süresi.",
+      "Dijital duvar kağıdı ile boya karşılaştırması: estetik çeşitlilik, maliyet, yenileme sıklığı, uygulama süresi ve bakım.",
     publishDate: "2026-03-04",
-    readTime: "6 dk",
+    readTime: "12 dk",
     keywords: ["dijital duvar kağıdı", "duvar kağıdı", "duvar boyası karşılaştırma"],
     sections: [
       {
-        heading: "Estetik cesitlilik acisindan farklar",
+        heading: "Estetik ve tema gücü",
         paragraphs: [
-          "Duvar boyasi sade yuzeyler icin avantajli olsa da dijital duvar kagidi daha guclu bir karakter ve tema etkisi sunar.",
-          "Mekana ozel desen ve olcek secenegi sayesinde kisilestirme imkani daha yuksektir.",
+          "Düz boya geniş renk yelpazesi sunar ancak fotoğrafik derinlik, manzara veya özel grafik etkisi sağlamaz. Dijital duvar kağıdı bu anlamda “mekânın sanat eseri” rolünü üstlenebilir.",
+          "Otel, mağaza veya marka duvarı gibi alanlarda hikâye anlatımı için duvar kağıdı genelde daha güçlüdür.",
         ],
       },
       {
-        heading: "Maliyet ve omur analizi",
+        heading: "Maliyet ve yenileme döngüsü",
         paragraphs: [
-          "Ilk yatirimda boya daha ekonomik gorunebilir. Ancak duzenli yenileme ihtiyaci oldugunda toplam maliyet artabilir.",
-          "Kaliteli duvar kagidi daha uzun omurlu oldugu icin uzun vadede avantaj sunabilir.",
+          "İlk yatırımda kaliteli boya genellikle daha uygunken, sık renk değişimi yapılan evlerde toplam maliyet zamanla artar. Dayanıklı duvar kağıdı uzun süre aynı görünümü koruyabilir.",
+          "Kısmi hasar senaryosunda boya küçük alanı tamir ettirir; duvar kağıdında yama görünürlüğü tasarıma bağlıdır.",
         ],
         bullets: [
-          "Boya: hizli yenileme, daha sik bakim",
-          "Duvar kagidi: yuksek baslangic, uzun omur",
-          "Dijital duvar kagidi: premium gorunus",
+          "Boya: hızlı renk değişimi, düzenli tazeleme ihtimali.",
+          "Duvar kağıdı: daha uzun görsel sabitlik, tematik güç.",
+          "Dijital duvar kağıdı: özel tasarımda premium segment.",
         ],
       },
       {
-        heading: "Bakim ve onarim kolayligi",
+        heading: "Uygulama süresi ve hazırlık",
         paragraphs: [
-          "Silinebilir duvar kagitlari gunluk kullanimda pratiklik saglar. Lokal hasarlarda parcali onarim mumkun olabilir.",
-          "Karar verirken mekan yogunlugu ve kullanim aliskanligini dikkate almak gerekir.",
+          "Boya birden fazla kat ve kuruma süresi gerektirir; duvar kağıdı uygulaması yüzey hazırsa tek günde bitebilir. Ancak duvar kağıdında ölçü ve planlama öncesi daha kritiktir.",
         ],
       },
       {
-        heading: "Hangi durumda hangisi secilmeli",
+        heading: "Hangi durumda hangisi?",
         paragraphs: [
-          "Vurgu duvari, kurumsal kimlik veya tematik mekan hedefleniyorsa dijital duvar kagidi daha etkili bir secenektir.",
-          "Nötr ve hizli bir yenileme hedefleniyorsa boya tercih edilebilir. Ilham icin Dekoartizan uzerinden uygulama ornekleri incelenebilir.",
+          "Vurgu duvarı, tematik çocuk odası veya kurumsal kimlik duvarı hedefleniyorsa dijital duvar kağıdı öne çıkar. Kiracı ve kısa süreli konutta hızlı nötrleşme isteniyorsa mat boya pratik olabilir.",
+          "Örnek projeleri dekoartizan.com üzerinden inceleyerek kendi senaryonuza yakın çözüm bulabilirsiniz.",
         ],
       },
     ],
@@ -468,41 +572,42 @@ export const articles: Article[] = [
     slug: "duvar-kagidi-olcu-alma-rehberi",
     title: "Duvar Kağıdı Ölçü Alma Rehberi: Hatasız Hesaplama Yöntemi",
     description:
-      "Duvar kağıdı için doğru ölçü nasıl alınır? Metrekare hesaplama, fire oranı ve özel alanlar için pratik ölçüm rehberi.",
+      "Duvar kağıdı ve dijital duvar kağıdı siparişi için metrekare hesabı, rapport, kapı–pencere düşümü, kolon ve fire. Çapraz kontrol formülü.",
     publishDate: "2026-03-03",
-    readTime: "6 dk",
+    readTime: "12 dk",
     keywords: ["duvar kağıdı ölçü alma", "duvar kağıdı", "dijital duvar kağıdı"],
     sections: [
       {
-        heading: "Temel metrekare hesabi",
+        heading: "Temel metrekare hesabı",
         paragraphs: [
-          "Her duvarin en ve boy olcusunu carpip toplam alani bulabilirsiniz. Bu temel hesap siparisin ilk adimidir.",
-          "Kapi ve pencere bosluklarini not etmek maliyeti netlestirmeye yardimci olur, ancak desen devaminda ekstra pay gerektirebilir.",
+          "Her düz duvar için en × boy ile alan bulunur; tüm duvarların toplamı brüt ihtiyacı verir. Ölçü birimi olarak metre kullanıp sonucu iki ondalıkla not almak hata payını düşürür.",
+          "Kapı ve pencere açıklıklarını tam alandan düşmek maliyeti düşürür; fakat desen hizasında bu açıklıklar yine de kesim ve eşleştirme gerektirdiği için bazı uygulamacılar kısmi fire bırakır.",
         ],
       },
       {
-        heading: "Fire payi neden gerekli",
+        heading: "Fire oranını neden artırmalısınız?",
         paragraphs: [
-          "Kesim, desen eslestirme ve uygulama yonu gibi nedenlerle fire olmasi dogaldir. Fire payi eklenmeyen siparislerde is yarim kalabilir.",
+          "Kesim artıkları, ilk şerit hizalama denemesi ve köşe dönüşleri fire oluşturur. Rapportlu desenlerde iki şerit arasında “eşleşmeyen” bölüm zorunlu olarak çöpe gidebilir.",
         ],
         bullets: [
-          "Duz desen: %8 - %10",
-          "Buyuk desen: %12 - %18",
-          "Karma duvar formu: daha yuksek pay",
+          "Düz veya düşük rapport: yaklaşık %8–12 fire.",
+          "Büyük tekrarlı desen: %15–20 ve üzeri fire mümkün.",
+          "Kırık planlı oda veya çok niş: ek pay zorunlu.",
         ],
       },
       {
-        heading: "Kolon, nis ve kirik duvarlarda olcum",
+        heading: "Kolon, niş ve kırık hat",
         paragraphs: [
-          "Kolon cikintisi veya nisli duvarlarda olcum tek parcada degil bolgesel alinmalidir. Her kirilim noktasi ayri hesaplanmalidir.",
-          "Dijital duvar kagidi siparisinde bu bilgiler desen planini dogrudan etkiler.",
+          "Kolon ölçüsünü çevreleyerek veya yükselen düzlem gibi ayrı yazarak toplamı kaçırmayın. Alçalı tavan ve lento gibi yapılar ayrı ölçü alanlarını oluşturur.",
+          "Dijital duvar kağıdı panellerinde yükseklik tavandan tavana net ölçülmelidir; süpürgelik sonrası görünür yükseklik ile karıştırılmamalıdır.",
         ],
       },
       {
-        heading: "Siparis oncesi son kontrol",
+        heading: "Sipariş öncesi son kontrol listesi",
         paragraphs: [
-          "Tum olculeri ikinci bir kisi ile tekrar kontrol etmek, hata riskini belirgin sekilde azaltir.",
-          "Ek ornek ve teknik ipuclari icin Dekoartizan uzerindeki rehberleri de degerlendirebilirsiniz.",
+          "Ölçüleri ikinci kişi ile okuyun; özellikle yüksek tavanlarda merdiven kaynaklı yanlış okuma sık görülür.",
+          "Üreticiden rollo/panel genişliği ve minimum sipariş bilgisini alın; geniş panel tek parça yükseklik limiti varsa bunu planlayın.",
+          "Ek referans için dekoartizan.com ölçü ve uygulama rehberleri de incelenebilir.",
         ],
       },
     ],
@@ -511,42 +616,41 @@ export const articles: Article[] = [
     slug: "salon-icin-duvar-kagidi-fikirleri",
     title: "Salon İçin Duvar Kağıdı Fikirleri: Modern ve Şık Kombinler",
     description:
-      "Salon dekorasyonunda duvar kağıdı kullanımına dair modern fikirler: vurgu duvarı, renk uyumu, mobilya dengesi ve aydınlatma önerileri.",
+      "Salon duvar kağıdı ve dijital duvar kağıdı: TV duvarı, kanepesi koltuk uyumu, halı–perde–avize ile renk dengesi ve zamansız seçim.",
     publishDate: "2026-03-02",
-    readTime: "7 dk",
+    readTime: "13 dk",
     keywords: ["duvar kağıdı", "dijital duvar kağıdı", "salon dekorasyonu"],
     sections: [
       {
-        heading: "Vurgu duvari ile odak noktasi olusturun",
+        heading: "Vurgu duvarı ile odak oluşturma",
         paragraphs: [
-          "Salonda televizyon arkasi veya yemek bolumu tek duvarda desen kullanmak, mekani daha premium gosterebilir.",
-          "Tum duvarlarda yogun desen yerine kontrollu bir vurgu cogu zaman daha guclu sonuc verir.",
+          "TV ünitesi veya kanepe arkası tek duvarda güçlü desen kullanmak salonun “sahnesini” tanımlar. Dört duvara aynı yoğunlukta desen çoğu evde bunaltıcı olur.",
+          "Dijital duvar kağıdı ile manzara veya büyük ölçekli çiçekler kullanıyorsanız mobilya ve rafların desenin kritik bölümünü kesmemesine dikkat edin.",
         ],
       },
       {
-        heading: "Mobilya ile dengeyi kurun",
+        heading: "Mobilya tonu ve desen dengesi",
         paragraphs: [
-          "Koyu koltuk takimlariyla acik zeminli duvar kagidi, acik koltuklarla ise orta tonlu desenler iyi dengelenir.",
-          "Hali, perde ve aksesuarlarin renklerini duvar kagidiyle uyumlu secmek butunluk saglar.",
+          "Koyu koltuklarla açık fonlu duvar kağıdı veya açık kumaşla orta kontrastlı desen iyi çalışır. Sehpa ve TV ünitesinin ahşabı, duvar kağıdındaki bir ikincil renkle köprülenebilir.",
         ],
         bullets: [
-          "Ahsap mobilya + toprak ton",
-          "Modern metal detay + gri ton",
-          "Klasik tarz + yumusak motif",
+          "Ahşap tonlarıyla toprak paleti.",
+          "Modern metal ayak + nötr–gri desen.",
+          "Klasik mobilya + yumuşak floral veya damask hissi (ölçek kontrollü).",
         ],
       },
       {
-        heading: "Aydinlatma etkisini dogru yonetin",
+        heading: "Aydınlatma ve parlak yüzeyler",
         paragraphs: [
-          "Sicak beyaz aydinlatma, desenin dokusunu one cikarir. Soguk isik bazen tonu sertlestirebilir.",
-          "Numune testini gunduz ve gece ayri degerlendirmek daha dogru secim saglar.",
+          "Spot ışıkları desen üzerinde parlama yaratabilir; mat yüzeyli duvar kağıdı veya ışığın açısını ayarlamak rahatsızlığı azaltır.",
+          "Gün ışığı salonlarda renkler canlı görünür; lamba altında tekrar değerlendirin.",
         ],
       },
       {
-        heading: "Trend ama zamansiz secim yapin",
+        heading: "Zamansızlık ve trend dengesi",
         paragraphs: [
-          "Sadece moda oldugu icin secilen duvar kagidi kisa surede yorucu olabilir. Zamansiz renkler uzun sure memnuniyet saglar.",
-          "Dekoartizan uzerindeki salon projeleri bu konuda iyi bir karsilastirma zemini sunar.",
+          "Sadece trend için seçilen çok moda bir desen birkaç sezonda sıkabilir. Nötr tabanda güçlü tek duvar vurgusu, güncelleme ihtiyacını tek yüzeyle sınırlar.",
+          "Salon görselleri için dekoartizan.com projeleri kıyaslama sunar.",
         ],
       },
     ],
@@ -555,42 +659,40 @@ export const articles: Article[] = [
     slug: "yatak-odasi-icin-duvar-kagidi-onerileri",
     title: "Yatak Odası İçin Duvar Kağıdı Önerileri: Huzurlu Mekan Tasarımı",
     description:
-      "Yatak odasında duvar kağıdı seçerken sakin renkler, yumuşak desenler ve doğru duvar konumlandırması ile huzurlu atmosfer oluşturun.",
+      "Yatak odasında duvar kağıdı ve dijital duvar kağıdı: başucu duvarı odak, sakin palet, tekstil uyumu ve ışıkla gece–gün görünümü.",
     publishDate: "2026-03-01",
-    readTime: "6 dk",
+    readTime: "12 dk",
     keywords: ["duvar kağıdı", "dijital duvar kağıdı", "yatak odası dekorasyonu"],
     sections: [
       {
-        heading: "Basucu duvarinda odak tasarim",
+        heading: "Başucu duvarında odak",
         paragraphs: [
-          "Yatak odasinda en dengeli sonuc, genellikle basucu duvarinda desenli uygulama ile elde edilir.",
-          "Bu secim hem goz yormaz hem de mekana kimlik katar.",
+          "Yatak başının arkasındaki duvar, desenli duvar kağıdı için en doğal yerdir; karşı duvarda sakin ton veya düz yüzey uyku için gözü rahatlatır.",
+          "Raflı başlık ve mobilier desenin üzerini kapatacaksa motif seçiminde “kayıp alanı” hesaba katın.",
         ],
       },
       {
-        heading: "Dinlendirici renk paletleri",
+        heading: "Dinlendirici renk ve düşük uyarım",
         paragraphs: [
-          "Bej, kirik beyaz, acik gri ve pastel yesil gibi tonlar uyku kalitesini destekleyen sakin bir atmosfer olusturur.",
-          "Yuksek kontrastli desenleri yatak odasinda sinirli kullanmak daha dogrudur.",
+          "Kırık beyaz, bej, lavanta, soluk yeşil ve köpük gri gibi tonlar uyku kalitesine katkı sunan sakin paletlerdir. Yüksek kontrast çizgiler uyarıcı olabilir; yine de kişisel tercih ve oda yönü ile denge kurulmalıdır.",
         ],
         bullets: [
-          "Dusuk kontrastli motifler",
-          "Mat dokulu yuzeyler",
-          "Yumusak gecisli tonlar",
+          "Düşük kontrastlı motif veya çok hafif doku.",
+          "Mat veya saten mat yüzey; gece lambası altında göz kırpmayan.",
+          "Ayna ve parlak yüzey yansımasını yatak hizasında sınırlama.",
         ],
       },
       {
-        heading: "Tekstil uyumu ile tamamlayin",
+        heading: "Tekstil ve halı ile tamamlama",
         paragraphs: [
-          "Nevresim, perde ve hali secimi duvar kagidinin karakterini tamamlar. Benzer ton ailesi daha butun gorunum saglar.",
-          "Dijital duvar kagidi secildiginde desen yogunlugunu tekstillerle dengelemek gerekir.",
+          "Nevresim, yatak örtüsü ve halı tonlarını duvar kağıdı ile aynı ailede tutmak odayı “toparlama” hissine kavuşturur. Desenli duvar kağıdı seçildiyse tekstilde sade desen tercih edin.",
         ],
       },
       {
-        heading: "Uzun vadeli memnuniyet icin test",
+        heading: "Numune ve gün–gece gözlemi",
         paragraphs: [
-          "Numune uygulamasi yaparak sabah ve aksam gorunumlerini kiyaslamak daha guvenli bir karar verir.",
-          "Farkli kombinasyonlari Dekoartizan benzeri kaynaklardan inceleyerek secimi netlestirebilirsiniz.",
+          "Yatak odasında sabah güneşi ve gece başucu lambası duvar kağıdını farklı gösterir; numune birkaç gün duvarınızda kalsın.",
+          "Farklı kombinasyonlar için https://dekoartizan.com yatak odası örnekleri fikir verebilir.",
         ],
       },
     ],

@@ -89,7 +89,7 @@ export default function SssPage() {
                   bolumune gecebilirsiniz.
                 </p>
                 <p className="mt-3">
-                  Trend ve dekorasyon ilhami icin{" "}
+                  Daha geniş trend ve mekân örnekleri için{" "}
                   <a
                     href="https://dekoartizan.com/"
                     target="_blank"
@@ -98,7 +98,7 @@ export default function SssPage() {
                   >
                     dekoartizan.com
                   </a>{" "}
-                  baglantisini da inceleyebilirsiniz.
+                  adresindeki içeriklere göz atabilirsiniz.
                 </p>
               </div>
               <div className="space-y-4">

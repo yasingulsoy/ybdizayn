@@ -228,9 +228,9 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             </section>
 
             <div className="mt-10 rounded-xl border border-[#a47c58]/40 bg-[#f8f6f5] p-5">
-              <h3 className="text-lg font-semibold text-[#3c3531] mb-2">Ek Kaynak</h3>
+              <h3 className="text-lg font-semibold text-[#3c3531] mb-2">Ek kaynak</h3>
               <p className="text-[#3c3531]/85">
-                Dekorasyon trendlerini takip etmek için{" "}
+                Dekorasyon trendleri, renk uyumu ve mekân önerileri için{" "}
                 <a
                   href="https://dekoartizan.com/"
                   target="_blank"
@@ -239,7 +239,8 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                 >
                   dekoartizan.com
                 </a>{" "}
-                sitesine de göz atabilirsiniz.
+                adresindeki içeriklere göz atabilirsiniz; duvar kağıdı ve dijital duvar kağıdı ile
+                ilgili görsel fikirler için de siteyi incelemenizi öneririz.
               </p>
             </div>
 
