@@ -34,6 +34,15 @@ export default function Header() {
               <span className="hidden sm:inline">Hemen Ara</span>
               <span className="text-xs md:text-sm">+90 530 240 71 61</span>
             </a>
+            <span className="text-white/45 px-0.5 select-none" aria-hidden="true">
+              ·
+            </span>
+            <a
+              href="tel:+902166516163"
+              className="flex items-center gap-1.5 hover:text-[#a47c58] transition-all duration-300 md:gap-2"
+            >
+              <span className="text-xs md:text-sm">+90 216 651 61 63</span>
+            </a>
             <span className="flex items-center gap-1.5 md:gap-2">
               <LocationIcon />
               <span className="hidden sm:inline">Konum</span>

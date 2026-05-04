@@ -44,6 +44,10 @@ export default function Footer() {
                 <a href="tel:+905302407161">
                   +90 530 240 71 61
                 </a>
+                <span className="opacity-70">, </span>
+                <a href="tel:+902166516163">
+                  +90 216 651 61 63
+                </a>
               </li>
               <li>
                 <span>E-mail:</span>{" "}

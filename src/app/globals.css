@@ -173,6 +173,25 @@ body {
   color: #3c3531;
 }
 
+.about-exact__call-text-stack {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+  gap: 6px;
+}
+
+.about-exact__call-text-stack a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #3c3531;
+  text-decoration: none;
+  line-height: 1.25;
+}
+
+.about-exact__call-text-stack a:hover {
+  color: #a47c58;
+}
+
 .about-exact__right {
   position: relative;
   margin-left: 70px;
