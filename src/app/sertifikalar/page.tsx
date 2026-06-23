@@ -8,6 +8,9 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 export const metadata: Metadata = {
   title: "Sertifikalar - YB Dizayn",
   description: "YB Dizayn sertifikaları ve kalite belgeleri. Duvar kağıdı ürünlerimiz uluslararası standartlara uygundur.",
+  alternates: {
+    canonical: "/sertifikalar",
+  },
 };
 
 const certificates = [

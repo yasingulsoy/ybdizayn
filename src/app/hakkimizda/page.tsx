@@ -9,6 +9,9 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 export const metadata: Metadata = {
   title: "Hakkımızda - YB Dizayn",
   description: "YB Dizayn - 5 yılı aşkın deneyimle modern duvar kağıtları. Konut, otel, okul, hastane ve sosyal tesisler için kaliteli duvar kağıdı çözümleri.",
+  alternates: {
+    canonical: "/hakkimizda",
+  },
 };
 
 const features = ["Biz uzman ve sertifikalı tasarımcılarız", "Sadece kaliteli malzemeler kullanıyoruz", "Biz müşterilerimizi umursuyoruz", "Akıllı ve benzersiz duvar kağıdı tasarımları"];

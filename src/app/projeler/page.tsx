@@ -8,7 +8,11 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
   title: "Projeler - YB Dizayn",
-  description: "YB Dizayn projeleri - Karakter duvar kağıtları, çocuk odaları, kurumsal ve tekstil duvar kağıtları.",
+  description:
+    "YB Dizayn duvar kağıdı üretimi ve proje bazlı uygulamalar: otel, hastane ve kurumsal mekanlarda tekstil tabanlı çözümler.",
+  alternates: {
+    canonical: "/projeler",
+  },
 };
 
 export default function ProjelerPage() {
@@ -16,7 +20,7 @@ export default function ProjelerPage() {
     <>
       <Header />
       <main>
-        <PageHeader title="Projeler" subtitle="Duvar kağıdı projelerimiz" />
+        <PageHeader title="Projeler" subtitle="Üretim ve proje bazlı duvar kağıdı çözümleri" />
         <ProjectGallery />
       </main>
       <NewsletterSection />

@@ -101,19 +101,8 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
       url: imageUrl,
       caption: cover?.alt ?? article.title,
     },
-    author: {
-      "@type": "Organization",
-      name: "YB Dizayn",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "YB Dizayn",
-      url: BASE_URL,
-      logo: {
-        "@type": "ImageObject",
-        url: `${BASE_URL}/logon.png`,
-      },
-    },
+    author: { "@id": `${BASE_URL}/#organization` },
+    publisher: { "@id": `${BASE_URL}/#organization` },
     mainEntityOfPage: `${BASE_URL}/${article.slug}`,
     keywords: article.keywords.join(", "),
   };
@@ -132,6 +121,16 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         text: item.answer,
       },
     })),
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Anasayfa", item: BASE_URL },
+      { "@type": "ListItem", position: 2, name: "Makaleler", item: `${BASE_URL}/makaleler` },
+      { "@type": "ListItem", position: 3, name: article.title, item: `${BASE_URL}/${article.slug}` },
+    ],
   };
 
   return (
@@ -302,6 +301,10 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
         />
       </main>
       <NewsletterSection />

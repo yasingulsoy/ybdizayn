@@ -643,32 +643,52 @@ body {
   padding: 0 24px;
 }
 
-.project-page-exact__main {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 28px;
-  align-items: center;
+.project-page-exact__intro {
+  max-width: 860px;
+  margin: 0 auto 36px;
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.65;
+  color: #5c534e;
 }
 
-.project-page-exact__image-wrap {
-  position: relative;
-  min-height: 520px;
+.project-page-exact__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 12px;
+  margin-bottom: 28px;
 }
 
-.project-page-exact__content-wrap {
-  position: relative;
+.project-page-exact__tab {
+  border: 2px solid rgba(60, 53, 49, 0.2);
+  background: #fff;
+  color: #3c3531;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s, color 0.2s;
 }
 
-.project-page-exact__shape {
-  position: absolute;
-  top: -43px;
-  right: -30px;
+.project-page-exact__tab:hover {
+  border-color: #a47c58;
+  color: #a47c58;
+}
+
+.project-page-exact__tab.is-active {
+  border-color: #a47c58;
+  background: #a47c58;
+  color: #fff;
 }
 
 .project-page-exact__content {
   background: #fff;
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.15);
   padding: 52px 60px 60px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .project-page-exact__content h3 {
@@ -684,37 +704,6 @@ body {
 .project-page-exact__content a {
   color: #a47c58;
   font-weight: 600;
-}
-
-.project-page-exact__thumbs {
-  margin-top: 28px;
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.project-page-exact__thumb {
-  position: relative;
-  width: 130px;
-  height: 120px;
-  overflow: hidden;
-  opacity: 0.6;
-  cursor: pointer;
-  border: 2px solid transparent;
-  border-radius: 8px;
-  transition: opacity 0.2s, border-color 0.2s;
-  padding: 0;
-  margin: 0;
-  background: none;
-}
-
-.project-page-exact__thumb:hover {
-  opacity: 0.9;
-}
-
-.project-page-exact__thumb.is-active {
-  opacity: 1;
-  border-color: #a47c58;
 }
 
 .project-page-exact__more {
@@ -1079,7 +1068,6 @@ body {
 @media (max-width: 991px) {
   .footer-exact__top,
   .about-two-exact__grid,
-  .project-page-exact__main,
   .contact-exact__grid,
   .testimonial-exact__grid,
   .cert-exact__grid {
@@ -1099,8 +1087,11 @@ body {
     width: 42%;
     height: 48%;
   }
-  .project-page-exact__image-wrap {
-    min-height: 360px;
+  .project-page-exact__content {
+    padding: 32px 24px 40px;
+  }
+  .project-page-exact__intro {
+    text-align: left;
   }
 }
 
@@ -1154,10 +1145,6 @@ body {
   .quality-work__right h2 {
     font-size: 42px;
     line-height: 1.1;
-  }
-
-  .project-page-exact__image-wrap {
-    min-height: 450px;
   }
 
   .page-header-exact {

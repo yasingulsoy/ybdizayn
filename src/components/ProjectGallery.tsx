@@ -1,29 +1,28 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
 const projects = [
   {
-    title: "Karakter Duvar Kağıtları",
-    description: "Çocuk odaları ve özel alanlar için renkli karakter ve tema duvar kağıtları. Sevimli figürlerle mekanlarınıza canlılık katın.",
-    image: "/wp/proje-karakter.jpg",
+    title: "Otel Projeleri",
+    description:
+      "Lobi, koridor ve oda ölçeklerinde dijital baskı duvar kağıdı ile otel markanıza uygun atmosfer. Proje bazlı ölçüm, desen ve üretim koordinasyonu; teslimat ve uygulama süreçlerini tek çatı altında yönetiyoruz.",
   },
   {
-    title: "Çocuk Odaları",
-    description: "Çocuklarınız için renkli, eğlenceli ve güvenli duvar kağıdı tasarımları. Hayal gücünü destekleyen desenler.",
-    image: "/wp/proje-cocuk.jpg",
+    title: "Hastane ve Sağlık Tesisleri",
+    description:
+      "Hasta ve ziyaretçi alanlarında sakinleştirici görsel dil, yönlendirme ve kurumsal kimliğe uyum. Sağlık sektörüne özgü temizlenebilir, dayanıklı tekstil tabanlı duvar kağıdı çözümleriyle proje gereksinimlerinize göre üretim yapıyoruz.",
   },
   {
-    title: "Kurumsal Duvar Kağıtları",
-    description: "Ofis, okul, hastane ve kurumsal mekanlar için profesyonel duvar kağıdı çözümleri.",
-    image: "/wp/kurumsal-duvar-kagitlari.jpg",
+    title: "Kurumsal ve Ticari Mekanlar",
+    description:
+      "Ofis, mağaza, eğitim ve sosyal tesislerde marka veya mimari projeye özel duvar kağıdı. Seri veya özel ölçü üretimle büyük metrajlı işlerde parti ve tutarlılık planlaması sunuyoruz.",
   },
   {
-    title: "Tekstil Duvar Kağıtları",
-    description: "Tekstil tabanlı, kaliteli ve dayanıklı duvar kağıtları. Uzun ömürlü kullanım için ideal.",
-    image: "/wp/tekstil-duvar-kagitlari.jpg",
+    title: "Üretim ve Proje Uygulaması",
+    description:
+      "YB Dizayn’ın odağı dijital baskı duvar kağıdı üretimi ve sahada proje bazlı uygulamadır. Tasarımdan metraja, baskıdan sevkiyata kadar her adımı projenizin ölçeğine göre kurgularız.",
   },
 ];
 
@@ -34,42 +33,37 @@ export default function ProjectGallery() {
   return (
     <section className="project-page-exact">
       <div className="project-page-exact__container">
-        <div className="project-page-exact__main">
-          <div className="project-page-exact__image-wrap">
-            <Image
-              src={activeProject.image}
-              alt={activeProject.title}
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 60vw"
-              priority={activeIndex === 0}
-            />
-          </div>
-          <div className="project-page-exact__content-wrap">
-            <div className="project-page-exact__shape">
-              <Image src="/wp/project-one-shape-1.png" alt="" width={154} height={157} />
-            </div>
-            <div className="project-page-exact__content">
-              <h3>{activeProject.title}</h3>
-              {activeProject.description && <p>{activeProject.description}</p>}
-              <Link href="/iletisim">Detaylı Bilgi</Link>
-            </div>
-          </div>
-        </div>
+        <p className="project-page-exact__intro">
+          YB Dizayn; duvar kağıdı üretimi ve proje bazlı işler üzerinde çalışır. Otel ve hastane projelerinde
+          deneyimliyiz; diğer kurumsal mekanlarda da aynı üretim disiplini ve proje yaklaşımıyla hizmet veririz.
+        </p>
 
-        <div className="project-page-exact__thumbs">
+        <div className="project-page-exact__tabs" role="tablist" aria-label="Proje kategorileri">
           {projects.map((project, i) => (
             <button
               key={project.title}
               type="button"
+              role="tab"
+              id={`project-tab-${i}`}
+              aria-selected={i === activeIndex}
+              aria-controls={`project-panel-${i}`}
               onClick={() => setActiveIndex(i)}
-              className={`project-page-exact__thumb ${i === activeIndex ? "is-active" : ""}`}
-              aria-label={project.title}
-              aria-pressed={i === activeIndex}
+              className={`project-page-exact__tab ${i === activeIndex ? "is-active" : ""}`}
             >
-              <Image src={project.image} alt={project.title} fill className="object-cover" sizes="130px" />
+              {project.title}
             </button>
           ))}
+        </div>
+
+        <div
+          className="project-page-exact__content"
+          role="tabpanel"
+          id={`project-panel-${activeIndex}`}
+          aria-labelledby={`project-tab-${activeIndex}`}
+        >
+          <h3>{activeProject.title}</h3>
+          {activeProject.description && <p>{activeProject.description}</p>}
+          <Link href="/iletisim">Detaylı Bilgi</Link>
         </div>
 
         <div className="project-page-exact__more">

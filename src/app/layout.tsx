@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { siteStructuredData } from "@/lib/structured-data";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -13,9 +14,6 @@ export const metadata: Metadata = {
   title: "YB Dizayn | Kaliteli Duvar Kağıtları - Digital Print Wallpapers",
   description: "YB Dizayn - Ümraniye/İstanbul. Kaliteli dijital baskı duvar kağıtları. Profesyonel duvar kağıdı çözümleri.",
   metadataBase: new URL("https://ybdizayn.com"),
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
     title: "YB Dizayn | Kaliteli Duvar Kağıtları - Digital Print Wallpapers",
     description:
@@ -55,6 +53,10 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} font-sans antialiased`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteStructuredData) }}
+        />
         {children}
       </body>
     </html>
