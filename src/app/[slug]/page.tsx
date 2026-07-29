@@ -8,6 +8,7 @@ import NewsletterSection from "@/components/NewsletterSection";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { getArticleCover, fallbackArticleCoverSrc } from "@/lib/article-covers";
 import { getAllArticles, getArticleBySlug, getCommonFaqs } from "@/lib/articles";
+import { getCrossLink } from "@/lib/cross-links";
 
 type ArticlePageProps = {
   params: Promise<{ slug: string }>;
@@ -87,6 +88,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
   const cover = getArticleCover(article.slug);
   const imageUrl = cover ? `${BASE_URL}${cover.src}` : DEFAULT_OG_IMAGE;
+  const crossLink = getCrossLink(article.slug);
 
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -226,22 +228,23 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
               </p>
             </section>
 
-            <div className="mt-10 rounded-xl border border-[#a47c58]/40 bg-[#f8f6f5] p-5">
-              <h3 className="text-lg font-semibold text-[#3c3531] mb-2">Ek kaynak</h3>
-              <p className="text-[#3c3531]/85">
-                Dekorasyon trendleri, renk uyumu ve mekân önerileri için{" "}
-                <a
-                  href="https://dekoartizan.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#a47c58] font-semibold hover:underline"
-                >
-                  dekoartizan.com
-                </a>{" "}
-                adresindeki içeriklere göz atabilirsiniz; duvar kağıdı ve dijital duvar kağıdı ile
-                ilgili görsel fikirler için de siteyi incelemenizi öneririz.
-              </p>
-            </div>
+            {crossLink && (
+              <div className="mt-10 rounded-xl border border-[#a47c58]/40 bg-[#f8f6f5] p-5">
+                <h3 className="text-lg font-semibold text-[#3c3531] mb-2">Ek kaynak</h3>
+                <p className="text-[#3c3531]/85">
+                  {crossLink.before}
+                  <a
+                    href={crossLink.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#a47c58] font-semibold hover:underline"
+                  >
+                    {crossLink.anchor}
+                  </a>
+                  {crossLink.after}
+                </p>
+              </div>
+            )}
 
             <section className="mt-10">
               <h3 className="text-2xl font-semibold text-[#3c3531] mb-4">Sıkça sorulan sorular</h3>
