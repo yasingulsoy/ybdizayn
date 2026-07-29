@@ -74,7 +74,6 @@ export const articles: Article[] = [
         paragraphs: [
           "Uygulama bittikten sonra odayı bir süre havalandırın; yapıştırıcı tam kurumadan mobilya yaslamayın veya intensif temizlik yapmayın.",
           "Kuruma sürecinde sıcak hava üfleme cihazını doğrudan duvar kağıdına tutmaktan kaçının; ani kuruma eklerde gerilim yaratabilir.",
-          "Dekorasyon trendleri ve malzeme çeşitleri hakkında güncel içeriklere https://dekoartizan.com üzerinden de göz atarak kendi projenizi zenginleştirebilirsiniz.",
         ],
       },
     ],
@@ -94,7 +93,6 @@ export const articles: Article[] = [
           "Salonda sosyalleşme ve televizyon izleme, yatak odasında dinlenme, çalışma köşesinde ise odaklanma beklenir. Bu nedenle duvar kağıdı seçerken yalnızca görsele değil, gün içindeki kullanım yoğunluğuna da odaklanın.",
           "Dijital duvar kağıdı, yüksek çözünürlüklü baskı sayesinde fotoğraf, illustration veya özel desenle mekâna güçlü bir tema kazandırır. Yoğun desenli bir seçim için önce mobilya ve zemin nötr mü değerlendirin; aksi halde görsel yük artabilir.",
           "Çocuklu veya evcil hayvanlı evlerde temizlenebilir yüzey ve dayanıklı malzeme önceliği, estetik kadar pratiklik sağlar.",
-          "Benzer yaşam tarzı senaryolarında mekân fotoğrafları ve stil önerileri için https://dekoartizan.com sayfalarına göz atmak seçeneklerinizi netleştirmenize yardımcı olur.",
         ],
       },
       {
@@ -121,7 +119,6 @@ export const articles: Article[] = [
         paragraphs: [
           "Trend bir desen kısa sürede sıkılabilir; mobilya değişimlerine uyum sağlayan nötr tabanlı desenler uzun yıl memnuniyet sunar.",
           "Dijital duvar kağıdı siparişinde üretim toleransı ve renk parti farkı konularını tedarikçiyle netleştirin; özellikle ek sipariş gerektiren büyük projelerde parti numarası önemlidir.",
-          "Stil ve trend karşılaştırmaları için dekoartizan.com üzerindeki dekorasyon ve iç mimari yazılarını düzenli incelemek seçiminizi güçlendirir.",
         ],
       },
     ],
@@ -165,7 +162,6 @@ export const articles: Article[] = [
         heading: "Numune ve gün–gece testi",
         paragraphs: [
           "Aynı duvar kağıdı örneği kuzey ve güney duvara, farklı saatlerde farklı görünebilir. Mümkünse A4 veya rulo numuneyi birkaç gün aynı duvarda tutup sabah–öğle–akşam gözlemleyin.",
-          "Trend renk geçişlerini takip etmek için https://dekoartizan.com içerikleri güncel kombinasyon fikirleri sunar.",
         ],
       },
     ],
@@ -209,7 +205,6 @@ export const articles: Article[] = [
         heading: "Mobilya ölçeği ve boşluk bırakma",
         paragraphs: [
           "Küçük odada büyük mobilya ölçeği duvarın neredeyse tamamını kaplıyorsa desenin büyük kısmı görünmez olur. Bu durumda ya mobilyayı sadeleştirin ya da desenin en etkileyici kısmının görünen bölgeye denk gelmesini planlayın.",
-          "Benzer uygulama örnekleri için dekoartizan.com sayfaları referans olabilir.",
         ],
       },
     ],
@@ -252,7 +247,6 @@ export const articles: Article[] = [
         heading: "Küçük onarım ve yedek parça",
         paragraphs: [
           "Küçük sıyrık veya köşe kalkması erken müdahale ile büyümeden kapatılabilir. Aynı desen ve partiden yedek şerit bulundurmak kesim–yama onarımını mümkün kılar.",
-          "Bakım ve dekor güncellemeleri için https://dekoartizan.com içerikleri ilham verebilir.",
         ],
       },
     ],
@@ -296,7 +290,6 @@ export const articles: Article[] = [
         heading: "Akustik beklentileri doğru çerçeveleyin",
         paragraphs: [
           "Duvar kağıdı tek başına tam akustik panelli çözüm yerine geçmez; ancak yüzey hareketi ve malzeme katmanı ile yankı hissini hafif destekleyebilir. Asıl akustik ihtiyaç için panel ve tavan çözümleri ayrı planlanmalıdır.",
-          "Kurumsal dekorasyon trendlerini dekoartizan.com sitesindeki trend yazılarıyla kıyaslamak güncel stil kararı vermenize yardımcı olur.",
         ],
       },
     ],
@@ -339,7 +332,6 @@ export const articles: Article[] = [
         heading: "Operasyonel dayanıklılık",
         paragraphs: [
           "Bagaj çarpması, temizlik arabası ve vale trafiği lobilerde yüzey yıpranmasını hızlandırır. Uygun yüzey dayanımı ve zamanında yerel onarım protokolü operasyonu destekler.",
-          "Konaklama sektörüne yönelik görsel trendler için dekoartizan.com gibi güncel içerik sunan platformları düzenli takip etmek uygundur.",
         ],
       },
     ],
@@ -382,7 +374,6 @@ export const articles: Article[] = [
         heading: "Güvenli mobilya yerleşimi",
         paragraphs: [
           "Ağır kitaplık ve karyolaları duvar kağıdı vurgu duvarına yaslamadan önce duvara sabitleme ve deprem riskine yönelik önlemler çocuk güvenliği için önceliklidir.",
-          "İlham kombinleri için https://dekoartizan.com içerikleri farklı yaş gruplarına örnek sunabilir.",
         ],
       },
     ],
@@ -425,7 +416,6 @@ export const articles: Article[] = [
         heading: "Trend ile zamansızlığı dengelemek",
         paragraphs: [
           "Modaya tam kapanmak yerine nötr bir taban üzerinde trend vurgusu kullanmak, birkaç yıl sonra yenileme ihtiyacını azaltır.",
-          "Trend analizleri ve uygulama fotoğrafları için dekoartizan.com yayınlarını takip etmek faydalıdır.",
         ],
       },
     ],
@@ -443,7 +433,6 @@ export const articles: Article[] = [
         heading: "Malzeme sınıfı ve baskı teknolojisi",
         paragraphs: [
           "Vinil, dokulu non-woven veya tekstil tabanlı ürünler farklı dayanım ve fiyat seviyelerinde gelir. Dijital duvar kağıdı için kullanılan mürekkep kalitesi, UV dayanımı ve laminasyon yaşam süresini uzatır.",
-          "Marka ve koleksiyon karşılaştırması yaparken dekoartizan.com üzerindeki güncel yazılar, segmentler arası farkları anlamanızda faydalı olabilir.",
           "Aynı görseli düşük çözünürlükte basmak maliyeti düşürür fakat yakından pikselli görünüm riski doğurur.",
         ],
       },
@@ -469,7 +458,6 @@ export const articles: Article[] = [
         heading: "Toplam sahip olma maliyeti",
         paragraphs: [
           "İlk satın alma fiyatı düşük olsa bile sık bakım veya erken yenileme gerektiren ürün uzun vadede pahalı olabilir. Silinebilirlik, kenar dayanımı ve garanti süreleri karşılaştırmada sorulmalıdır.",
-          "Fiyat–performans örnekleri için dekoartizan.com içeriklerine göz atılabilir.",
         ],
       },
     ],
@@ -520,7 +508,6 @@ export const articles: Article[] = [
         heading: "Profesyonel plan ve kontrol listesi",
         paragraphs: [
           "Kesim sırası, sandalye–iş platformu konumu ve elektrik kesintisi günü önceden netleştiğinde süre aşımı ve hata azalır.",
-          "Detaylı görsel örnekler için https://dekoartizan.com rehberleri uygulama öncesi okunabilir.",
         ],
       },
     ],
@@ -563,7 +550,6 @@ export const articles: Article[] = [
         heading: "Hangi durumda hangisi?",
         paragraphs: [
           "Vurgu duvarı, tematik çocuk odası veya kurumsal kimlik duvarı hedefleniyorsa dijital duvar kağıdı öne çıkar. Kiracı ve kısa süreli konutta hızlı nötrleşme isteniyorsa mat boya pratik olabilir.",
-          "Örnek projeleri dekoartizan.com üzerinden inceleyerek kendi senaryonuza yakın çözüm bulabilirsiniz.",
         ],
       },
     ],
@@ -607,7 +593,6 @@ export const articles: Article[] = [
         paragraphs: [
           "Ölçüleri ikinci kişi ile okuyun; özellikle yüksek tavanlarda merdiven kaynaklı yanlış okuma sık görülür.",
           "Üreticiden rollo/panel genişliği ve minimum sipariş bilgisini alın; geniş panel tek parça yükseklik limiti varsa bunu planlayın.",
-          "Ek referans için dekoartizan.com ölçü ve uygulama rehberleri de incelenebilir.",
         ],
       },
     ],
@@ -650,7 +635,6 @@ export const articles: Article[] = [
         heading: "Zamansızlık ve trend dengesi",
         paragraphs: [
           "Sadece trend için seçilen çok moda bir desen birkaç sezonda sıkabilir. Nötr tabanda güçlü tek duvar vurgusu, güncelleme ihtiyacını tek yüzeyle sınırlar.",
-          "Salon görselleri için dekoartizan.com projeleri kıyaslama sunar.",
         ],
       },
     ],
@@ -692,7 +676,6 @@ export const articles: Article[] = [
         heading: "Numune ve gün–gece gözlemi",
         paragraphs: [
           "Yatak odasında sabah güneşi ve gece başucu lambası duvar kağıdını farklı gösterir; numune birkaç gün duvarınızda kalsın.",
-          "Farklı kombinasyonlar için https://dekoartizan.com yatak odası örnekleri fikir verebilir.",
         ],
       },
     ],
