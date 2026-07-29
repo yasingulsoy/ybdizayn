@@ -6,13 +6,16 @@ const SAME_AS = [
 ];
 
 /**
- * Site-wide structured data graph (Organization + WebSite + LocalBusiness),
- * cross-referenced via @id so search engines and AI assistants resolve them
- * as a single business entity. Rendered once in the root layout.
+ * Site-wide structured data (Organization + WebSite), rendered once in the root
+ * layout.
  *
- * Only fields verifiable from the site are included. Opening hours and
- * aggregateRating are intentionally omitted (do not fabricate). priceRange
- * is a soft estimate — adjust if needed.
+ * NOTE — no LocalBusiness node, on purpose. YB Dizayn shares the same physical
+ * address and landline (+90 216 651 61 63) as its sister site dekoartizan.com.
+ * To avoid local-pack cannibalization, dekoartizan is the designated local /
+ * Google Business Profile entity, so this site presents only as a brand
+ * Organization — no address / geo / areaServed that would make it compete for
+ * the "Ümraniye duvar kağıdı" local pack. See cross-links.ts for the sister-site
+ * linking strategy.
  */
 export const siteStructuredData = {
   "@context": "https://schema.org",
@@ -43,39 +46,6 @@ export const siteStructuredData = {
         "Ümraniye/İstanbul merkezli dijital baskı duvar kağıdı üretimi ve uygulama hizmetleri.",
       publisher: { "@id": `${BASE_URL}/#organization` },
       inLanguage: "tr-TR",
-    },
-    {
-      "@type": ["LocalBusiness", "HomeGoodsStore"],
-      "@id": `${BASE_URL}/#localbusiness`,
-      name: "YB Dizayn",
-      url: BASE_URL,
-      image: `${BASE_URL}/wp/blog-1.jpg`,
-      logo: `${BASE_URL}/logon.png`,
-      description:
-        "Konut, otel, hastane ve kurumsal mekanlar için dijital baskı duvar kağıdı üretimi, tasarımı ve uygulaması.",
-      telephone: "+905302407161",
-      email: "info@ybdizayn.com",
-      priceRange: "₺₺",
-      currenciesAccepted: "TRY",
-      parentOrganization: { "@id": `${BASE_URL}/#organization` },
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "Adem Yavuz Mah. Barışık Sk. No:6",
-        addressLocality: "Ümraniye",
-        addressRegion: "İstanbul",
-        postalCode: "34773",
-        addressCountry: "TR",
-      },
-      geo: {
-        "@type": "GeoCoordinates",
-        latitude: 41.0177819,
-        longitude: 29.1555283,
-      },
-      areaServed: [
-        { "@type": "City", name: "İstanbul" },
-        { "@type": "Country", name: "Türkiye" },
-      ],
-      sameAs: SAME_AS,
     },
   ],
 };
